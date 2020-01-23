@@ -1,0 +1,74 @@
+﻿\p \v 1	0	clip	Clip 1
+\p \v 2	00.918H	ɛː h a v a l a m ə w u m b ɛː ɛ b ɛː	
+\p \v 3	3.155	clip	Clip 2
+\p \v 4	03.155H	j a k a ɾ b i n a b ɔ j a j e s u k r i s t u a n ɡ a b ɛ a s i m u n a	
+\p \v 5	06.061H	a n ɡ a l a a b u i m i n l a ŋ a m b e a b ɔ i	
+\p \v 6	07.913H	i m i l a r m i m i n ɡ a b a ʃ u m i b o r b a b i f ɔ k	
+\p \v 7	10.070H	a ʃ u n e b e y a m n a: i s a n j a b i a k u s u	
+\p \v 8	12.575	clip	Clip 3
+\p \v 9	12.575H	i b ə l ə	
+\p \v 10	13.249H	m e z ə n m ə b e	
+\p \v 11	14.294H	a w u n a j ə a w u n ə n a	
+\p \v 12	16.244H	z e n z a m b ə	
+\p \v 13	17.051H	i n ə	
+\p \v 14	17.780H	e z ə n s e t a n	
+\p \v 15	18.965H	i n ə	
+\p \v 16	19.743	clip	Clip 4
+\p \v 17	19.743H	a n i j a	
+\p \v 18	20.555H	n a l t ə a t͡ʃ i n i n a	
+\p \v 19	21.555H	u r o i e m o r a s ə m	
+\p \v 20	22.506H	a b w e m a m e j e m i n a b eː	
+\p \v 21	23.95	clip	Clip 5
+\p \v 22	23.950H	a k aː	
+\p \v 23	24.982H	i z ə n y i n a b eː	
+\p \v 24	26.241H	ə n d u i j e s u k r i s t u	
+\p \v 25	27.699H	a y i n a m o t̚	
+\p \v 26	28.739H	a x ə ŋ ə n	
+\p \v 27	29.435H	a m u m ɔ d b i n a m	
+\p \v 28	30.591	clip	Clip 6
+\p \v 29	30.591H	a b ə l ə n s ə m s ə m ɡ a n ə w a t i aː	
+\p \v 30	32.758H	a b ə a d a m	
+\p \v 31	33.956H	a n d u w a z a m b a j i n a	
+\p \v 32	35.830H	a m o z u w a w u	
+\p \v 33	37.185	clip	Clip 7
+\p \v 34	37.185H	ɔː w i l i n j ɛ	
+\p \v 35	38.133	clip	Clip 8
+\p \v 36	38.133H	d͡z i j a b w ɔ i t u d i n a	
+\p \v 37	39.727H	t u w a l u j e s u k r i s t u s a	
+\p \v 38	41.24	clip	Clip 9
+\p \v 39	41.240H	a n ə m u w e	
+\p \v 40	41.952H	o n ə z a m b ə j e s u k r i s t u s	
+\p \v 41	43.646H	a n ə m u w e	
+\p \v 42	44.465H	a k a j n a j e s u k r i s t u	
+\p \v 43	45.999H	a b ɔ n e o h a m a n u m w ɔ n z a m b a	
+\p \v 44	47.377H	a s u n a m a n u d z u m i s u m i m i s ə	
+\p \v 45	49.111H	o n ə z a m k a ɾ n ə	
+\p \v 46	50.252H	a n t i	
+\p \v 47	51.282	clip	Clip 10
+\p \v 48	51.282H	u n ə	
+\p \v 49	52.171H	z a m b a w a m a	
+\p \v 50	53.001H	m a j a m n ə m e n ɛ n s ə m m i n s ə m	
+\p \v 51	55.106	clip	Clip 11
+\p \v 52	55.106H	ə n d ɔ a n t i	
+\p \v 53	56.326H	m a m ə m	
+\p \v 54	57.081H	a m i s m w e	
+\p \v 55	57.964H	m n e m ə n ə n s ə m i n s ə m	
+\p \v 56	59.361	clip	Clip 12
+\p \v 57	59.361H	m a j i b ə n ə j e s u k r i s t u a ŋ ɡ ɔ w a k u l u s	
+\p \v 58	62.011H	a s u d aː m a s u n ə m ə b i n i	
+\p \v 59	63.418H	m a j i b ə	
+\p \v 60	64.345H	n a ŋ ɡ a j aː n	
+\p \v 61	65.526	clip	Clip 13
+\p \v 62	65.526H	e n i n d͡ʒ i j e	
+\p \v 63	66.711H	a s u n i m i n s e m i a m a	
+\p \v 64	68.093H	m i d͡ʒ u b e n	
+\p \v 65	68.866H	m a q o l e n u w a	
+\p \v 66	69.819H	d͡ʒ u m a m i n s e m m j a m a	
+\p \v 67	70.96	clip	Clip 14
+\p \v 68	70.960H	f u m u n a m e nː ə m	
+\p \v 69	71.925H	a s u n ə b w a n ə m ə a n ə m e m w a n z a m b a	
+\p \v 70	73.892H	s u n ə m ə t o ŋ j e s u k r i s t u	
+\p \v 71	75.503H	a s u n ə m e tʷ ɔ b ɛ w a n t i	
+\p \v 72	76.912H	a m u s a w u d a m a	
+\p \v 73	78.220H	æː m e n	
+\p \v 

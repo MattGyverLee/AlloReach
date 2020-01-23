@@ -1,0 +1,173 @@
+﻿Sort	Human	Allo	1
+aː	∅	a	1
+aː	a a b u i	ə b̥ o ɾ	1
+aː	a b eː	b̥ e	1
+aː	a b eː	ə b̥ ə	1
+aː	a b ɛ a	ə v e	1
+aː	a b	ə p	1
+aː	a j	∅	1
+aː	a j	ə i	1
+aː	a l	ɔ m	1
+aː	a m b e a	n v ə ə	1
+aː	a m ə	ɐ	1
+aː	a m	∅	1
+aː	a m	ɛ	1
+aː	a n ə	ɐ l o	1
+aː	a ŋ ɡ	∅	1
+aː	a t	w ə t͡ʃ	1
+aː	a y i	ɐ d u	1
+aː	a	∅	2
+aː	a	ɐ	6
+aː	a	ɔ	2
+aː	a	ə	19
+aː	a	ɛ	3
+aː	a	o	2
+aː	a	u	2
+aː	aː	ɛ	1
+aː	aː	a ɐ	1
+aː	aː	ə	2
+æː	æː	a	1
+bː	∅	b e	1
+bː	b a j i	b̥ ɛ ɡ ə	1
+bː	b a	b̥ ə	1
+bː	b ə	∅	1
+bː	b ɛ	b̥ i	1
+bː	b ɛː	l v e r i	1
+bː	b i	d j	1
+bː	b	b̥	3
+bː	b	ə b̥ i j	1
+bː	k	b̥	1
+bː	m b ɛː ɛ	b e e	1
+ɔː	ɔ a	ɡ w ə	1
+ɔː	ɔ j	o i	1
+ɔː	ɔ	∅	1
+ɔː	ɔ	a	1
+ɔː	ɔ	o	1
+ɔː	ɔː w i	o v	1
+dː	∅	d	1
+dː	d u i j e	d͡ʒ	1
+dː	d z	d͡ʒ	1
+dː	d	ɾ	1
+dː	d͡z i	t͡s e	1
+dː	d͡ʒ i j	∅	1
+dː	d͡ʒ	s	1
+eː	∅	e	1
+eː	e j	a n o	1
+əː	ə m m i	a	1
+eː	e m	∅	1
+əː	ə m	ɛ v	1
+əː	ə m	o	1
+eː	e n	ə	1
+eː	e nː	i d	1
+eː	e tʷ	ə k t ə	1
+əː	ə w u	o o	1
+eː	e z	ə t͡s	1
+eː	e	∅	1
+əː	ə	∅	1
+eː	e	ɐ	1
+əː	ə	a	1
+əː	ə	ɐ	1
+əː	ə	e	1
+əː	ə	e	2
+əː	ə	ɛ	1
+əː	ə	o	2
+əː	ə	u	2
+ɛː	ɛ	ə	1
+ɛː	ɛː h a v	i o	1
+fː	f u	s i	1
+ɡː	∅	ɡ o	1
+ɡː	∅	ɡ	2
+ɦː	∅	ɦ o	1
+hː	∅	h	1
+hː	h a	o	1
+iː	∅	i	2
+iː	i b	e v	1
+iː	i j a	∅	1
+iː	i n j	e l	1
+iː	i	ə k v a v	1
+iː	i	e	1
+iː	i	ə	1
+jː	∅	j	4
+jː	j aː	ɐ	1
+jː	j e	i ə	1
+jː	j i b ə n	ɛ v	1
+jː	j	∅	2
+jː	j	d i	1
+jː	j	i	1
+kː	∅	k	1
+kː	k r	ŋ p	1
+kː	k r	p ɾ	1
+kː	k r	p t	1
+kː	k	∅	1
+kː	k	p	1
+mː	m a	n ə v	1
+mː	m b a	ŋ b̥ ə	1
+mː	m b ə j	ŋ ɡ o	1
+mː	m i	∅	1
+mː	m i	ɾ n	1
+mː	m m	ɾ	1
+mː	m n e	∅	1
+mː	m	∅	1
+mː	m	n	3
+mː	m	o n e b	1
+mː	m	v	1
+nː	∅	n d o	1
+nː	∅	n	2
+nː	n i	e	1
+nː	n	∅	6
+nː	n	l	1
+ŋː	∅	ŋ d e	1
+ŋː	ŋ ɡ	n d	1
+ŋː	ŋ j	n i	1
+oː	o n ə z	∅	1
+pː	∅	p	1
+qː	q	k	1
+rː	r a s	ɾ	1
+rː	r b a b	l d u d	1
+rː	r i	e	1
+rː	r m i	ə o u	1
+sː	∅	s k e a	1
+sː	∅	s o	1
+sː	∅	s p	1
+sː	∅	s t	2
+sː	s a	z ɛ	1
+ʃː	ʃ u m	s	1
+ʃː	ʃ u	s o e	1
+sː	s	t͡s	1
+sː	s	z	1
+tː	∅	t	1
+tː	t ə	∅	1
+tː	t u	k o	1
+tː	t̚	d	1
+tː	t	t s	1
+uː	∅	u n ə	1
+uː	u k r	ə t ɾ	1
+uː	u m i	e v ə	1
+uː	u m	n	1
+uː	u n	∅	1
+uː	u r	s b̥ i	1
+uː	u s a w	z e ɡ	1
+uː	u w e	m	1
+uː	u w	i b	1
+uː	u w	o d	1
+uː	u	∅	3
+uː	u	ə	5
+uː	u	f i	1
+uː	u	i ɦ	1
+uː	u	i	1
+uː	u	o	2
+uː	u	w ɔ	1
+uː	u	w o	1
+vː	∅	v	1
+wː	∅	w l o	1
+wː	∅	w	2
+wː	w a	o d e d	1
+wː	w ɔ	o	1
+wː	w e	o j l ə	1
+wː	w u	∅	1
+xː	x ə ŋ ə	v e l i	1
+yː	y a	∅	1
+yː	y	∅	1
+zː	∅	z	1
+zː	z e	t͡s o	1
+zː	z	t͡s	1

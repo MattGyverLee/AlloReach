@@ -1,0 +1,73 @@
+﻿0	clip	Clip 1	3.155
+00.918	PhonemicAllo	i o a l ə m o o b e e l i v e r i	3.155
+03.155	clip	Clip 2	12.575
+03.155	PhonemicAllo	i a k a ɾ b i n a b o i a i ə s u p r i s t w o a n ɡ ə v e s i m u n ə	6.061
+06.061	PhonemicAllo	ə n ɡ a l ə b o ɾ m i l a ŋ n v ə ə b i	7.913
+07.913	PhonemicAllo	ə m e l a ə o u m i b e n ɡ ə p a s i u n ə b w o l d u d i f ɔ	10.070
+10.070	PhonemicAllo	a s o e n e ə i j e m n ɛ i z ɛ n j a d j a k u s u	12.575
+12.575	clip	Clip 3	19.743
+12.575	PhonemicAllo	i b ə l ə	13.249
+13.249	PhonemicAllo	m e ə n m ə b e	14.294
+14.294	PhonemicAllo	ə w o n u j a a w u n e n ə	16.244
+16.244	PhonemicAllo	z o n z a n b ə	17.051
+17.051	PhonemicAllo	s t i n ə	17.780
+17.780	PhonemicAllo	ə z ə n s e t a	18.965
+18.965	PhonemicAllo	s t i n ə	19.743
+19.743	clip	Clip 4	23.950
+19.743	PhonemicAllo	a n	20.555
+20.555	PhonemicAllo	n a l a s k e a s i n i n ə	21.555
+21.555	PhonemicAllo	s p i o n i ə m o ɾ ə s o m	22.506
+22.506	PhonemicAllo	ə b w e m a m a n o e n b e	23.950
+23.950	clip	Clip 5	30.591
+23.950	PhonemicAllo	a a	24.982
+24.982	PhonemicAllo	i z ə n i n ə b ə	26.241
+26.241	PhonemicAllo	ɛ n s u k ɾ i s t u	27.699
+27.699	PhonemicAllo	a d u n o m o d	28.739
+28.739	PhonemicAllo	a v e l i n t	29.435
+29.435	PhonemicAllo	a w l o m m ɔ ɾ b i n ɛ	30.591
+30.591	clip	Clip 6	37.185
+30.591	PhonemicAllo	h a b ə l ə n s ə m s ə m ɡ ə l o w w ə i ə	32.758
+32.758	PhonemicAllo	a a j d ə m	33.956
+33.956	PhonemicAllo	ɛ n d w a j z a m b ɛ ɡ ə n ə	35.830
+35.830	PhonemicAllo	a j m w o z w o w ɡ u v	37.185
+37.185	clip	Clip 7	38.133
+37.185	PhonemicAllo	o v l e l ɛ s t	38.133
+38.133	clip	Clip 8	41.240
+38.133	PhonemicAllo	d e j a b o i k o d i n a	39.727
+39.727	PhonemicAllo	t ə w ɔ m u e s u p t i s t ə s ə	41.240
+41.240	clip	Clip 9	51.282
+41.240	PhonemicAllo	a n o m o d e d	41.952
+41.952	PhonemicAllo	a ŋ ɡ o e s u k r i s t ə s	43.646
+43.646	PhonemicAllo	ɛ n ə m	44.465
+44.465	PhonemicAllo	a k e a n ə i e s u ŋ p i s t u	45.999
+45.999	PhonemicAllo	ə b o n o o m n n w a n z a m b ə	47.377
+47.377	PhonemicAllo	a s o n ə m o n u d u i n s e v ə m i s ə	49.111
+49.111	PhonemicAllo	o n e z a m k a ɾ n ə	50.252
+50.252	PhonemicAllo	ɛ n t i	51.282
+51.282	clip	Clip 10	55.106
+51.282	PhonemicAllo	p o ə	52.171
+52.171	PhonemicAllo	z a m b w a n a	53.001
+53.001	PhonemicAllo	m a ɡ o m l ə v e n ə n s a n i s ə m	55.106
+55.106	clip	Clip 11	59.361
+55.106	PhonemicAllo	o n d ɡ w ə n t ə k v a v	56.326
+56.326	PhonemicAllo	m ə m	57.081
+57.081	PhonemicAllo	ə m i s m o j l ə	57.964
+57.964	PhonemicAllo	m ə m m ə j n ə n s ɛ v i s o	59.361
+59.361	clip	Clip 12	65.526
+59.361	PhonemicAllo	m a ɛ v ə d i e s ə t ɾ i s t u ɔ n d o w ɔ k w ɔ l ə s	62.011
+62.011	PhonemicAllo	ə s u d ə m a z s f i n ə m e v i n i	63.418
+63.418	PhonemicAllo	m a j e v ə	64.345
+64.345	PhonemicAllo	n a n d a ɛ n	65.526
+65.526	clip	Clip 13	70.960
+65.526	PhonemicAllo	k e e n e ŋ d e	66.711
+66.711	PhonemicAllo	a s i o n e b i n s e ɾ n a m ə	68.093
+68.093	PhonemicAllo	m i z u b ə	68.866
+68.866	PhonemicAllo	m a k o l e n i b a	69.819
+69.819	PhonemicAllo	s u n ə v m i s e ɾ j a m ə	70.960
+70.960	clip	Clip 14	79.308
+70.960	PhonemicAllo	s i m u n u m i d ə m	71.925
+71.925	PhonemicAllo	ə s i ɡ u b o d e n m ə ɡ a w o n ə m w a n z a m b ə	73.892
+73.892	PhonemicAllo	a z s j i e n ə m u t o n i e s u k ɾ e s t u	75.503
+75.503	PhonemicAllo	ə s i n ə m ə k t ə ɔ b i ə n t i	76.912
+76.912	PhonemicAllo	a m z e ɡ u d ɛ m ə	78.220
+78.220	PhonemicAllo	a m e n	79.308

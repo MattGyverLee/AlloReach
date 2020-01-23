@@ -1,0 +1,73 @@
+﻿0	clip	Clip 1	3.155
+00.918	GenericAllo	i̥ o lː ə m o̞ o β̞ e e l l β̞ e r i̥	3.155
+03.155	clip	Clip 2	12.575
+03.155	GenericAllo	ð a k a ɾ̠ b i̥ n a β̞ o ʎ a ʎ e̞ s u pʰ ɹ r i̥ s ɯ̥ t o̥ ʋ o a n ɡ ə β̞ e t̚ ɕ i̥ m u n ə	6.061
+06.061	GenericAllo	ə n ɡ a e̞ lː o̞ b o̞ ɾ o̞ m e l a ŋ æ n β̞ ə ə b ɯ̥ ɨ	7.913
+07.913	GenericAllo	e̞ m e l a ə kx o u m i̥ b e̞ n ɡ ə β̞ a s ɕ u n o̞ b w o̞ ɾ̠ d o̞ d i̥ f ɔ tʰ	10.070
+10.070	GenericAllo	a ɕ i̥ o œ e o̥ tʰ ə β̞ i̥ ʎ e m n ɛ i̥ z e̞ n j a d i̥ j a k u s uː	12.575
+12.575	clip	Clip 3	19.743
+12.575	GenericAllo	iː β̞ ə l ə	13.249
+13.249	GenericAllo	n e t͡s e̞ n m ɐ b e̞ tʰ	14.294
+14.294	GenericAllo	ə w oː n o̞ j a a w oː n tʰ e n ə	16.244
+16.244	GenericAllo	t͡s e̞ n o̞ z a n b ɹ̩	17.051
+17.051	GenericAllo	s t iː n ə	17.780
+17.780	GenericAllo	eː t͡s ə n t͡s eː t a	18.965
+18.965	GenericAllo	s t i̥ n o̞	19.743
+19.743	clip	Clip 4	23.950
+19.743	GenericAllo	ɐ n iː a	20.555
+20.555	GenericAllo	n iː a l æ s k e̞ a t͡ʃ i̥ n i̥ n ə	21.555
+21.555	GenericAllo	s p e o n ɐ m o ɾ ə s o̞ m	22.506
+22.506	GenericAllo	ɑ b w ɨ e m a m e̞ a n o e n o̞ β̞ e	23.950
+23.950	clip	Clip 5	30.591
+23.950	GenericAllo	ð aː ɑ	24.982
+24.982	GenericAllo	ɪ z ə n iː n ə β̞ e̞	26.241
+26.241	GenericAllo	ɨ n ɨ i̥ ʎ e̞ s ɕ u pʰ ɾ ɪ s ɯ̥ t o̞ θ	27.699
+27.699	GenericAllo	æ i̥ d i̥ n o m o̞ d e̞	28.739
+28.739	GenericAllo	a v o̞ l e̞ n t	29.435
+29.435	GenericAllo	a w ŋ̟ l o̞ m m o̞ ɾ̠ b i̥ ð ɛ	30.591
+30.591	clip	Clip 6	37.185
+30.591	GenericAllo	h a b ɪ l ɪ n s o̞ m s ə ŋ̟ ɡ ɑ l o w w o̞ t͡ɕ ɪ ə	32.758
+32.758	GenericAllo	æ β̞ a i̥ d ă m	33.956
+33.956	GenericAllo	æ n d w o̞ a j z a m b æ i̥ ɡ i̥ n ə	35.830
+35.830	GenericAllo	a j m w o̞ ʒ͡ɣ w o̞ w ɡ u v	37.185
+37.185	clip	Clip 7	38.133
+37.185	GenericAllo	o ʋ l e ʎ e̞ t̪̚ t	38.133
+38.133	clip	Clip 8	41.240
+38.133	GenericAllo	t͡s e̞ j a β̞ o ɹ e̞ k o̞ d͡ʑ i̥ n a	39.727
+39.727	GenericAllo	t ɯ̥ w o̞ ɾ̠ u e s o̞ pʰ t͡ʃʲ i̥ s ɯ̥ t o̞ s ə	41.240
+41.240	clip	Clip 9	51.282
+41.240	GenericAllo	æ n o m o̞	41.952
+41.952	GenericAllo	o ɾ̠ e̞ d ă ŋ β̞ o̞ i̥ e s u ɯ̥ r i̥ s t e̞ s	43.646
+43.646	GenericAllo	æ ɾ̠ n o̞ m m o̞ i̥	44.465
+44.465	GenericAllo	æ ɾ̠ n o̞ m m o̞ i̥ a k e a i̥ n ə ʎ uː s oː ŋ pʰ i̥ s ɯ̥ t o̞	45.999
+45.999	GenericAllo	æ ɾ̠ n o̞ m m o̞ i̥  ə β̞ oː n o̞ o̞ ɹ x aː m ɨ n o̞ n o̥ w ʌ n i̥ z aː m b ɹ̩ θ	47.377
+47.377	GenericAllo	æ ɕ o n ə m o n u d͡ʒ u i̥ n s e̞ v ə m i̥ s ɨ tʰ	49.111
+49.111	GenericAllo	o n ɪ z a m k ɐ ɾ̠ n o̞	50.252
+50.252	GenericAllo	ɛ n t͡ɕ iː	51.282
+51.282	clip	Clip 10	55.106
+51.282	GenericAllo	p o lʲ ə	52.171
+52.171	GenericAllo	z a m b ʀ a n ɨ	53.001
+53.001	GenericAllo	m a i̥ ɡ o m l ə v e i̥ n ə n s a β̞ n iː s ă m	55.106
+55.106	clip	Clip 11	59.361
+55.106	GenericAllo	æ n d ɡ w ə n t ɪ zʲ v ɑ ʋ	56.326
+56.326	GenericAllo	m ə m æ m	57.081
+57.081	GenericAllo	e̞ s m o̞ j i̥ l e̞	57.964
+57.964	GenericAllo	k̟̚ ə j ɾ̠ e̞ n s ɛ v iː s o	59.361
+59.361	clip	Clip 12	65.526
+59.361	GenericAllo	m a ɛ β̞ ə d iː ʎ e s o̞ pʰ ɾ i̥ s ɯ̥ t u ʌ n d ɹ̩ w o̞ k w o̞ ɾ̠ uː s	62.011
+62.011	GenericAllo	ə s u d ă m æ z ɕ i̥ ɹ y i̥ ɪ ə m e ɹ d i̥ n i̥	63.418
+63.418	GenericAllo	m a j ɪ v ɨ	64.345
+64.345	GenericAllo	n a n d a i̥ ʎ ɐ n	65.526
+65.526	clip	Clip 13	70.960
+65.526	GenericAllo	t̪ʰ e ɪ n e̞ ŋ d e θ	66.711
+66.711	GenericAllo	a i̥ ɕ j o n e b ɪ n s o̞ ɾ n a m aː	68.093
+68.093	GenericAllo	m i̥ d͡ʑ u β̞ ə	68.866
+68.866	GenericAllo	m aː k o l e̞ n i̥ b a	69.819
+69.819	GenericAllo	s u n o̞ v m e s e β̞ i̥ a m ə	70.960
+70.960	clip	Clip 14	79.308
+70.960	GenericAllo	ʋ ɕ i̥ ʋ oː n u m ɪ d ə m	71.925
+71.925	GenericAllo	æ ɕ i̥ ɹ̩ u ɡ o̞ b o ɾ̠ e̞ d o̞ m o̞ x e̞ a kx o n o̞ m o̥ w ʌ n i̥ z ă m b ə	73.892
+73.892	GenericAllo	æ z s i̥ iː ɦ n o̞ m ɨ t o n o̞ j e s u k ɾ i̥ s t u	75.503
+75.503	GenericAllo	ə s i̥ u n o̞ m o̥ o̞ ə k t ɯ̥ ɔ β̞ i̥ w ɛ n t͡ɕ i̥	76.912
+76.912	GenericAllo	ă m z e ɡ u d ɛ m ə	78.220
+78.220	GenericAllo	æ m e̞ n	79.308

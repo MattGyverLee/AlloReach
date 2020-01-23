@@ -1,0 +1,73 @@
+﻿0	clip	Clip 1	3.155
+00.918	Orthography	[É havela] məwôm bɛɛ ai bɛɛ	3.155
+03.155	clip	Clip 2	12.575
+03.155	Orthography	yá [karbina bɔya] yésus kristu a ngábə́ á sí [muna],	6.061
+06.061	Orthography	a ngálɛ̂ abui míǹláŋ [a mbe abɔi]	7.913
+07.913	Orthography	[e mi larmi minga batsu mi borba bi fɔk]	10.070
+10.070	Orthography	asú náā bə́ yəm náā [e san yabia kusu]	12.575
+12.575	clip	Clip 3	19.743
+12.575	Orthography	e bələ́	13.249
+13.249	Orthography	[mə] zen ébɛ:	14.294
+14.294	Orthography	[awuna yə awuna na]	16.244
+16.244	Orthography	zen Zambá	17.051
+17.051	Orthography	e nə	17.780
+17.780	Orthography	[e zen] Sátan	18.965
+18.965	Orthography	e nə	19.743
+19.743	clip	Clip 4	23.950
+19.743	Orthography	[a ni ya]	20.555
+20.555	Orthography	[naltə atini na]	21.555
+21.555	Orthography	Eyɔŋ mod a sə́m	22.506
+22.506	Orthography	[a bwe ma meye mina be]	23.950
+23.950	clip	Clip 5	30.591
+23.950	Orthography	[a kaa]	24.982
+24.982	Orthography	é zen e nə́ abé	26.241
+26.241	Orthography	[andui] Yésus Kristus	27.699
+27.699	Orthography	ayi náā mod	28.739
+28.739	Orthography	á vəŋán	29.435
+29.435	Orthography	[amú mod bi nam]	30.591
+30.591	clip	Clip 6	37.185
+30.591	Orthography	[a bə len səm səm ga nə watia]	32.758
+32.758	Orthography	[a bə Adam]	33.956
+33.956	Orthography	[anduwa zamba yina]	35.830
+35.830	Orthography	[a mo zuwa wu]	37.185
+37.185	clip	Clip 7	38.133
+37.185	Orthography	[ɔɔ wilinyɛ].	38.133
+38.133	clip	Clip 8	41.240
+38.133	Orthography	Dzé yábɔ [e tu] dzi náā	39.727
+39.727	Orthography	tə walóé Yésus Kristu sá	41.240
+41.240	clip	Clip 9	51.282
+41.240	Orthography	[a nə mɔe]	41.952
+41.952	Orthography	[o nə zambə Yesus Kristus]	43.646
+43.646	Orthography	[a nə mue]	44.465
+44.465	Orthography	[a kayna Yesus Kristus]	45.999
+45.999	Orthography	[a bɔ ne o haganu mɔ́n Zamba]	47.377
+47.377	Orthography	[a su nama nudzumi sumi misə]	49.111
+49.111	Orthography	[a nzam kanə]	50.252
+50.252	Orthography	[a ǹti]	51.282
+51.282	clip	Clip 10	55.106
+51.282	Orthography	o nə	52.171
+52.171	Orthography	Zambá wama	53.001
+53.001	Orthography	[maya] mə nə́ [mə] ǹsə́m miǹsə́m.	55.106
+55.106	clip	Clip 11	59.361
+55.106	Orthography	[ən dɔ] á ǹti	56.326
+56.326	Orthography	maməm	57.081
+57.081	Orthography	[a mis mwe]	57.964
+57.964	Orthography	[mne mə nə nsəm i nsəm]	59.361
+59.361	clip	Clip 12	65.526
+59.361	Orthography	[Mayə́bə nə] Yésus kristus á [ŋgɔwa] kolós	62.011
+62.011	Orthography	ású [daam] ású náā mə́ bi enyiŋ.	63.418
+63.418	Orthography	Mayə́bə	64.345
+64.345	Orthography	[nə nga yan]	65.526
+65.526	clip	Clip 13	70.960
+65.526	Orthography	[e nin] dzíé	66.711
+66.711	Orthography	ású náā miǹsə́m [miyama]	68.093
+68.093	Orthography	mí dzúūbán.	68.866
+68.866	Orthography	Makogəlan ai wa	69.819
+69.819	Orthography	dzúū ma miǹsə́m myáma	70.960
+70.960	clip	Clip 14	79.308
+70.960	Orthography	[fumuna] ma ǹnə́m	71.925
+71.925	Orthography	[a su nə bwa nə mə a nə me mwan zamba.]	73.892
+73.892	Orthography	[asu nə] mə́ toŋ Yésus kristus	75.503
+75.503	Orthography	[a su] náā mə́ tɔbɔ́ ai wa á ǹti	76.912
+76.912	Orthography	abǒg áwú dáma.	78.220
+78.220	Orthography	Amen	79.308

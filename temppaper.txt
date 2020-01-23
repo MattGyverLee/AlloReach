@@ -1,0 +1,596 @@
+﻿% Template for ICASSP-2020 paper; to be used with:
+%          spconf.sty - ICASSP/ICIP LaTeX style file, and
+%          IEEEbib.bst - IEEE bibliography style file.
+% --------------------------------------------------------------------------
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage{spconf,amsmath,graphicx}
+\usepackage{svg}
+\usepackage{amsmath, amssymb}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{graphicx}
+%\usepackage{caption}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{algorithm2e}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage{relsize}
+\usepackage{tikz}
+\usepackage[utf8x]{inputenc}
+%\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{appendix}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+\usepackage{tabulary}
+\usepackage{lscape}
+\usepackage{caption}
+%\captionsetup{justification=raggedright, singlelinecheck=false}
+\usepackage{rotating}
+\usepackage{fontspec}
+%\usepackage[showframe]{geometry}
+
+\AtBeginEnvironment{quote}{\singlespacing\small}
+
+%\doublespacing
+\usetikzlibrary{positioning,arrows}
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+
+\newcommand{\ml}[1]{\textcolor{blue}{\small [#1 --ML]}}
+
+
+
+% Example definitions.
+% --------------------
+\def\x{{\mathbf x}}
+\def\L{{\cal L}}
+
+% Title.
+% ------
+\title{Extending the Reach of Allosaurus:\\
+\large A Universal Phone Recognition System}
+%
+% Single address.
+% ---------------
+
+%
+\name{Matthew Lee}
+%The maximum number of authors in the author list is twenty. If the number of contributing authors is more than twenty, they should be listed in a footnote or in acknowledgement section, as appropriate.
+\address{Dallas International University \&\\
+SIL International\\
+\texttt{Matthew\_Lee@diu.edu}}
+
+\begin{document}
+\setmainfont{Charis SIL Compact}
+\twelvept
+%
+\maketitle
+%
+\begin{abstract} 
+The mighty Allosaurus of old is not known for its long reach, as its arms were only somewhat longer than the much-ridiculed Tyrannosaurus Rex, but in the world of Automated Speech Recognition, Allosaurus (\textbf{allo}phone \textbf{s}ystem of \textbf{au}tomatic \textbf{r}ecognition for \textbf{u}niversal \textbf{s}peech) developed at Carnegie Mellon University seeks to use high-resource languages' data to extend the reach of phone-level automated speech recognition for low-resource languages. This paper is a trial of Allosaurus across recordings from two low-resource languages, Chamicuro of Peru and Ewondo of Cameroon, with analysis of the strengths and shortcomings of such a system.
+\end{abstract}
+%
+\begin{keywords}
+%One, two, three, four, five
+multilingual speech recognition, universal phone recognition, phonology
+\end{keywords}
+%
+% \section{Introduction}
+% \label{sec:intro}
+
+
+\section{Allosaurus}
+\label{sec:Allo}
+
+\subsection{Beginnings}
+Allosaurus (the \textbf{allo}phone \textbf{s}ystem of \textbf{au}tomatic  \textbf{r}ecognition for \textbf{u}niversal \textbf{s}peech) \cite{Li2020} is the phone recognition system developed primarily by Xinjian Li at Carnegie Mellon University running behind Dictate.app \footnote{\url{https://www.dictate.app/phone}}. It is a machine learning system designed to transform audio recordings into written phonetic transcriptions. The learning model was trained on eight resource-rich languages with a wide phonetic inventory and uses what was learned to identify phones in uploaded audio regardless of language.
+
+\subsection{Discussion}
+When developed for high-resource languages, most ASR (automated speech recognition) systems are trained with large amounts of data in the target language (lexicons, running and tagged texts, and grammars) to identify segments at the word level, only outputting known or approved sequences. Every bit of training makes the system more accurate for that language, but if the granularity is too low, it has the side effect of locking it into that language and limiting transfer of learning, and the “creativity” of the system.
+
+Rather than words, Allosaurus focuses on transcription into "phones" and is intentionally agnostic as to whether these are phonemes or their allophones. An automated speech recognition system only has access to the fully-realized surface form of the utterance. This means that, whatever the desired output, each level of further abstraction must be deciphered. This would be true of extension to a phonemic or orthographic representation. Even though the number and complexity of possible segments are significantly higher for phonetic segmentation, a phonetic transcription is the most direct goal for this type of system.
+%\ml{recognition vs segmentation.}
+\subsection{Customization}
+\label{sec:filter}
+I was introduced to Allosaurus's early version during a workshop in Pittsburgh on Language Documentation for Low Resource Languages at Carnegie Mellon University. At the time of the workshop, when provided with an audio clip, Allosaurus would output a space-separated list of phones using its full repertoire of circa 180 phones that it had learned to recognize. While this vocal range would seem to be an advantage, in practice, relatively rare phones that were prevalent in the training languages were often unexpectedly common in the output. This meant that transcriptions frequently included phones like voiceless vowels and a voiceless b (both of which would normally be quite restricted in their environments). With all of the unexpected phonemes, human editing the output was likely to be less efficient than typing the transcription from scratch.
+
+The speech-processing workgroup found that by removing some of the more unexpected phones from the inventory, it was easy to improve the output, and removing some of the worst offenders quickly provided a considerable improvement in the output. Limiting the inventory was shown to be an effective method of cleanup.
+
+The user could provide the list of phones, and the system could adapt its output, only delivering phones from the list. An interface resembling an IPA chart\footnote{\url{https://www.dictate.app/chart}} was developed to facilitate this workflow.
+
+
+\subsection{Language Templates}
+
+While the user could theoretically define each phone that they expected, I’m a big fan of useful templates that can be customized. When we found the wealth of phonemic (and sometimes phonetic) data on Phoible \cite{Moran2019} for over 2300 languages, it was obvious that this could be used to bootstrap the system by providing presets for each language.
+
+Link to PhoneInventory \cite{Lee2019}
+
+
+The Phoible dataset, after some cleanup and filtering, proved to be a valuable resource. This brings us up to the current project.
+
+
+%\begin{equation}
+%\mathbb{P}(p|\mathbf{x}) = \frac{\mathbb{P}(p|\mathbf{x})}{\mathbb{P}_\mathcal{D}(p)} \mathbb{P}_{world}(p)
+%\end{equation}
+
+%\begin{figure}[t]
+%  \centering
+%  \includegraphics[width=\columnwidth]{bluetooth.png}
+%  \caption{Traditional approaches predict phonemes directly, either for all languages (left) or separately for each language (middle). %On the contrary, our approach (right) predicts over a shared phone inventory, then maps into language-specific phonemes with an allophone layer.}
+% \label{arch}
+% \end{figure}
+
+
+
+
+\section{A Cord of Three Strands}
+For any machine learning system, there are three major elements that affect the output, the training data, the testing data, and the learning algorithm. Of course, some pre-processing and post-processing to normalize data is usually a good idea.
+
+\subsection{The Training Data}
+
+As shown in \hyperref[tab:corpus]{Table \ref*{tab:corpus}}, Allosaurus's model was trained on the high-resource languages of English, Japanese, Mandarin, Tagalog, Turkish, Vietnamese, Kazakh, German, Spanish, Amharic, Italian, and Russian. The largest contributions to the corpus were from English, Japanese, and Mandarin.
+
+These large corpora consist of aligned audio and orthographic text. The text was converted programmatically to phonemes using the profiles of the grapheme-to-phoneme mapping tool Epitran \cite{Mortensen2018}. This was an ingenious solution to the problem, as it would quickly produce consistent and regular transcriptions from the orthographic data. Unfortunately, such a rule-based system is unlikely to reproduce the wealth of phonological changes that would be found in human transcriptions. This means that rather than teaching the system to transcribe from human transcriptions, the system was taught to transcribe as a human taught a system to transcribe, an unfortunate, but ultimately understandable, abstraction.    
+
+\begin{table}[t!]
+\begin{center}
+    \caption{Training corpora and size in utterances for each language. Reproduced with permission from (\ml{Li, 2019 Forthcoming})} \label{tab:corpus}
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{l l r} 
+    \toprule
+    {\bf Language} & {\bf Corpora} & {\bf Utt.} \\
+    \midrule
+    English & voxforge, Tedlium \cite{rousseau2012}, Switchboard \cite{Godfrey1992} & 1148k \\
+    Japanese & Japanese CSJ \cite{maekawa2003} &  440k \\
+    Mandarin & Hkust \cite{liu2006}, openSLR \cite{HuiBuJiayuDu2017,DongWangXueweiZhang2015} & 377k \\
+    Tagalog & IARPA-babel106b-v0.2g & 93k \\
+    Turkish & IARPA-babel105b-v0.4 & 82k \\
+    Vietnamese & IARPA-babel107b-v0.7 & 79k \\
+    Kazakh & IARPA-babel302b-v1.0a & 48k \\
+    German & voxforge & 40k \\
+    Spanish & LDC2002S25 & 32k \\
+    Amharic & openSLR25 \cite{Abate2005} & 10k \\
+    Italian & voxforge & 10k \\
+    Russian & voxforge & 8k \\
+    \midrule
+    Inukitut & private & 1k \\
+    Tusom & private & 1k \\
+    \bottomrule
+    \end{tabular}
+    }
+    \vspace{-2mm}
+\end{center}
+\end{table}
+
+
+
+\subsection{In search of ideal test data}
+Test data with the highest transcription quality would be a high-quality recording in a language included in the training data, but what fun is that? The goal of machine learning is to apply the model to novel data.
+
+The second tier of ideal data is a high-quality recording in a language that only includes phones that are attested in the training data (Language \textit{x} in \hyperref[fig:venn]{Fig. \ref{fig:venn}}).
+
+The third tier of ideal data is a high-quality recording in a language with significant overlap of Allosaurus's training data (Language \textit{y} in \hyperref[fig:venn]{Fig. \ref{fig:venn}}).
+You might have noticed that there are some constants. The first is a high-quality recording. This will be discussed in more detail in \hyperref[sec:recQual]{Section~\ref{sec:recQual}}.
+If you were paying attention, you might have noticed that the defining mark of each tier is the amount of overlap with the training data. Thus, more training data with more varied phones (and more exemplars of rare phones) would improve the recognition of tier 3.
+
+In the current version of Allosaurus (as of December 2019), there is no provision for recognizing phones that are not in the training set, even if they are phonetically similar to attested phones in the training set.
+
+\subsubsection{Finding the Sweet Spot}
+One challenge for Allosaurus will be when phones exist in the training set but they do not exist in environments that are allowed in the language. Large enough datasets could be designed to include a wide variety of positions for each phone. Nevertheless, this is for the sort of thing that a machine Learning System is quite good at discerning. 
+
+Consider the Venn Diagram in \hyperref[fig:venn]{Fig.~\ref{fig:venn}}. The largest circle contains all of the phones that the system has learned to recognize, about 180 phones with the eight-language dataset. The smaller circles contains an list of phones that are found in language \textit{x }and language \textit{y}. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{images/venn.png}
+  \caption{A diagram of Phone Overlap Between Languages and the Training Set}
+ \label{fig:venn}
+\end{figure} 
+
+The filters discussed in \hyperref[sec:filter]{section~\ref{sec:filter}} successfully limit the output options, effectively limiting transcription of Language \textit{x} to the inventory of \textit{x}. For languages with a relatively straightforward phone inventory, recognition is greatly improved, and it is easier to edit the few mistakes manually.
+
+When we consider Language \textit{y}, the phones that fall outside of the training set are not magically recognized, as the system has no profiles to recognize them. Any phone not in the training set will not appear in the output, and the system will be forced to fall back to the most similar sound existing in both inventories.
+
+The downside of this approach is that any phone that exists in the language inventory but not the training set cannot be output. These are effectively blind spots of the system. Future work will allow the use of phonetic distance to assist the system in finding a nearby phone from the language. Imagine a language that has retroflexed consonants instead of dental consonants. If the system incorrectly guessed dental consonants, it could use phonetic distance to realize that retroflex alveolar consonants are nearby and choose those for output. This would allow the system to at least sometimes recognize sounds that are outside of its phone inventory. 
+% panphon
+
+\section{Discussion of Recording Quality}
+\label{sec:recQual}
+Recording quality affects both ends of Allosaurus's performance. Many factors influence the quality of the test data. Some of these factors are discussed here. What follows is a discussion of these effects.
+
+\subsection{Effects of Excessive Microphone Distance}
+The first challenge found in the Chamicuro data was the distance from the microphone. As 80\% of the training data for Allosaurus consisted of telephone recordings, the microphone was mere inches from the speaker's mouth. Though I don't know the origin of the other 20\%, it was likely recorded in a near-studio situation. This means that the training set doesn't include significant data recorded from a large distance (far-field), and thus it does not know how to handle it.
+
+What changes happen when an audio source is too far from the microphone?
+
+\subsubsection{Phonetic Detail}
+\label{sec:detail}
+The most significant loss at a distance is fine phonetic detail. While phones that are resonant \cite[p.~167]{clements2009} such as prototypical vowels will often be perceptible at a distance, voiceless stops and aspiration will be hard to identify and distinguish. This was the largest challenge with the Chamicuro data. Bilabial stops /p/, while common in the data, were very infrequently transcribed by Allosaurus. This was the ultimate reason that I abandoned pursuit of the Chamicuro transcription.
+
+\subsubsection{Low Volume and High Noise}
+Recording from a distance is quieter. Due to the inverse square law \cite{invsq}, as the Sound Source gets further from the microphone, the volume decreases exponentially. A voice six inches from the microphone will seem four times louder than the same voice twelve inches from the microphone. 
+
+If a speaker at a large distance is too quiet, the usual solution is to increase the gain in the microphone or recorder. While this does improve the volume of the speaker, it also amplifies everything else in the immediate surroundings. This increases noise in the recording. Noise can be loosely defined as anything in your recording you don't want. 
+
+With increased amplification, nearby fans, breathing, and outside noise will now also feature more prominently in the recording. The relationship between the desired data and the extraneous data is called the signal-to-noise ratio (SNR). A lower SNR usually means that the important data is less likely to be recoverable. While some minimally-intrusive noise can be reduced programmatically after the fact, some of the target recording data will be irreparably destroyed in the process. If strong noise in an important frequency range obscures the target data, the data may be unrecoverable.
+
+As noise is to be expected in recordings, a reasonable amount of noise is often added to some training data which can improve the quality of transcription /cite{??}.
+
+\subsubsection{Echo}
+The second challenge introduced by a distant speaker is echo. Every surface within range of the microphone will produce an echo that will be audible in the recording. Distance and amplification increase the number of reflective surfaces that can negatively influence the quality of the recording.
+
+Thus you will start to find echo in the recording delayed from the original speech, obscuring later utterances.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{images/Frequencies.png}
+  \caption{A spectrograph of /haz/. All data above the red line will be lost when downsampling to 8kHz, including most of the amplitude of the voiced sibilant /z/ }
+ \label{fig:hiFreq}
+\end{figure*}
+
+\subsection{Frequency Response}
+Human hearing typically reaches from just above 20 Hz to just below twenty thousand hertz. Adults usually can only hear to 15 or 16 thousand hertz. As predicted by the Nyquist theorem, to faithfully sample digitally everything that a human can hear, we need to record at twice the highest frequency that can be heard. This is why 48,000 and 41,000 samples per second are quite common for recordings. Both sampling rates give just over twenty thousand Hertz that can be accurately sampled and reproduced.
+
+Human voice typically falls between that 20 Hz and about 8000 Hz. This means that to faithfully sample the full spectrum of a human voice, one needs to record in excess of 16 thousand cycles per second. While 16,000 samples per second is the ideal, telecommunications technicians have realized that speech may be understandable at a lower sample rate. Telephone conversations are typically sampled at 8,000 cycles per second, which gives a maximum reproducible frequency of 4,000 Hz. Early Communication in space pushed the sampling down to about 5,000 samples per second reproducing only 2,500 Hz. This is why "One Small Step for Man" doesn't sound like a very good recording. The recordings in Chamicuro and Ewondo were collected at a standard 48,000 samples per second, and while this doesn't meet the current archival recommendations of 96,0000 samples per second, test data sampling in itself not a problem for our application.
+
+The challenge is that the data that was used to train the Allosaurus is largely telephone data. 80\% of the corpus data was received at 8,000 samples per second, and the rest was down-sampled to match. This means that only 4,000 Hz and lower frequencies are retained, and while 4,000 Hz is perfectly acceptable for identifying the fundamental formants of vowels, the higher frequency fricatives, especially sibilants, are not fully captured. As shown in \hyperref[fig:hiFreq]{{Figure \ref*{fig:hiFreq}}}, while it may still be possible to recognize sibilants via the lower frequencies, this is the acoustic equivalent of recognizing a close friend by their trousers rather than their face. 
+
+% https://home.cc.umanitoba.ca/~krussll/phonetics/acoustic/spectrogram-sounds.html
+
+Silberer \cite[p.~4]{Silberer2015} sums it up as follows:
+\begin{quote}
+According to ANSI S3.5-1997, as much as 95\% of the information necessary for speech recognition is provided when the available frequency bandwidth is 200 Hz to approximately 5-6 kHz. Still, some investigators suggest extending the bandwidth up to 9 kHz for both children and adults (Hornsby \& Ricketts, 2006; Stelmachowicz, Pittman, Hoover, \& Lewis, 2001). Stelmachowicz and colleagues (2001) have shown that when listening to children and female voices, some children will detect the phoneme /s/ more accurately with a bandwidth of 9 kHz compared to a bandwidth of 4 or 5 kHz. In contrast, other investigations have shown that extending bandwidth beyond 3-4 kHz does not always improve speech recognition performance and in some instances it may be detrimental to performance (Ching et al., 1998; Hogan \& Turner, 1998; Turner \& Cummings, 1999). 
+\end{quote}
+
+ The rest of the data came at a higher sampling rate and was down sample to 8 kilohertz to match. This means that there is no high frequency data in the training set. Sadly, resampling the telephone audio data will not reveal data where there is none. The solution here seems to be include higher quality data, which will not be easy to find in such a quantity.
+
+Due to the logarithmic nature of the Mel scale, doubling the recording rates of the audio will take up considerably more space, but it only adds about 6 new data points to the MFCC that will be used by the voice recognition system.
+
+\ml{Discuss Mel Scale}
+
+\subsubsection{Selective Attenuation}
+The next challenge is attenuation of higher frequencies through air. According to my research, the higher frequencies excite the air molecules and produce heat. When the energy is transformed into heat, it ceases to propagate through the air as sound. The result is that higher frequencies are attenuated more over distance as they travel through the air. Low frequencies are the most efficient to transfer, which is why earthquakes can be sensed on the other side of the world, and are less susceptible to attenuation.
+
+Thus, recorded voice from a distance will lack much of the higher frequency data that would have been captured with a nearer microphone. 
+
+\subsection{Other Effects Influencing Recognition}
+
+\subsubsection{Crosstalk}
+Crosstalk is another contributor to poor transcription, while the human mind is extremely talented at distinguishing and following multiple overlapping speakers, seamlessly performing segmentation and recognition. Contextual hints such as directionality and difference of voice are mixed into the same waveform with considerable overlap. Without the simulation of both voices and a lexicon of possibilities needed to untangle them \cite{diariz is hard}, sections of crosstalk are outside the scope of Allosaurus and are left to be transcribed by hand. 
+
+\subsubsection{Prosody}
+The best recognition will be performed on test data that matches the training data. For clear recognition, it is important that exemplars exist of each segment that needs to be recognized in similar prosodic contexts. While cross-speaker differences such as voice pitch should be normalized through the filtering of F0 that is normally done in ASR, prosody as extreme as whispering and shouting are unlikely to be recognized correctly and unfortunately adding such extreme training data is likely to reduce the quality of "normal" transcription.
+
+\subsection{Repairing the Audio}
+In most situations, one would just go back and re-record or annotate the audio. This is probably an example of a case where the BOLD methodology would be perfect. In this case, the speaker is in Peru and there are very few native speakers available. Thus, within the scope of this project this is not possible.
+
+
+\section{Trial 1: Chamicuro Transcription}
+
+Chamicuro is...
+
+Upon learning that there were some recordings of Chamicuro, a language of Peru, I intended to use Allosaurus to do transcriptions and analyze the output. I had the advantage that my professor has published significant information on the phonology of Chamicuro, giving me a starting point for configuring the transcription tool. 
+
+\subsection{Data Preparation}
+\label{sec:dataprep}
+The first task was to identify and segment the data, the first of which was a Swadesh wordlist in Spanish and Chamicuro. The recording was an interchange between a Spanish speaker who would prompt the native speaker, and two repetitions of the word in the language. In about 10 minutes of audio, about three minutes of speech containing the language was found.
+
+Upon listening to the data, it was obvious that the recording was not ideal. It seems that the Swadesh recording was done with the microphone off to the side of the speaker and prompter on a table. Each speaker seems to be several feet from the microphone, and the prompter was considerably louder than the speaker. The target speaker was elderly and soft-spoken, and the prompter had an unfortunate tendency to speak over the target speaker's repetitions. Nevertheless, to my ear, the words seemed quite intelligible, so I didn't worry too much. 
+
+The second recording was an autobiography of the same speaker in the language. The speaker was seemingly more distant from the microphone and spoke more softly than during the recording of the Swadesh list. 
+
+\subsection{Phonetic and Phonemic Inventory}
+For Chamicuro, the data from Phoible's Chamicuro profile was used. 
+
+One list included only the phonemes as defined by Parker \cite{Parker1991}:\\
+/a/, /aː/, /ç/, /e/, /eː/, /h/, /i/, /iː/, /j/, /k/, /l/, /ʎ/, /m/, /n/, /ɲ/, /o/, /oː/, /p/, /r/, /s/, /ʂ/, /ʃ/, /t/, /ts/, /t͡ʃ/, /u/, /uː/, /w/, /ʔ/
+
+A second list contained all phonemes and allophones as defined by Parker \cite{Parker1991}:\\
+/a/, /ḁ/, /aː/, /æ/, /ç/, /ɔ/, /çʰ/, /dl/, /e/, /e̥/, /ə/, /eː/, /ɛ/, /h/, /i/, /ɪ/, /i̥/, /iː/, /j/, /j̥/, /k/, /kʰ/, /l/, /ɬ/, /m/, /n/, /ɲ/, /ŋ/, /o/, /oː/, /p/, /pʰ/, /r/, /s/, /ʂ/, /ʃ/, /t/, /tʰ/, /ts/, /t̠ʃ/, /t̠ʃʰ/, /u/, /uː/, /w/, /x/, /ʎ/, /ʔ/  
+
+Note that the phones /ḁ/, /çʰ/, /dl/, /e̥/, /i/, /j̥/, /ɬ/, and /t̠ʃʰ/ are not included in the training set, so they will never be output in the current version of Allosaurus. This is similar to language \textit{y} in \hyperref[fig:venn]{Fig.~\ref{fig:venn}}.  
+
+My expectation was that transcription with the phonetic inventory would output a narrow transcription, and the phonemic listing would "fail over" to the phonemic forms that are nearest their allophonic counterpart. 
+
+\subsection{Chamicuro Results}
+
+\begin{figure}[t]
+  \centering
+  \href{https://github.com/MattGyverLee/AlloReach/raw/master/samples/ccc-Chamicuro/72-heart.mp3}{\\
+  \includegraphics[width=\columnwidth]{media/72-heart.png}}
+  \caption{An analysis of \textit{ajkeloki} 'heart' in Chamicuro. \href{https://github.com/MattGyverLee/AlloReach/raw/master/samples/ccc-Chamicuro/72-heart.mp3}{%Click the image to play the sound clip.
+  }}
+ \label{fig:heart}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \href{https://github.com/MattGyverLee/AlloReach/raw/master/samples/ccc-Chamicuro/09-dirty.mp3}{\\
+  \includegraphics[width=\columnwidth]{media/09-dirty.png}}
+  \caption{An analysis of \textit{pa'sawa} 'dirty' in Chamicuro. \href{https://github.com/MattGyverLee/AlloReach/raw/master/samples/ccc-Chamicuro/09-dirty.mp3}{%Click the image to play the sound clip.
+  }}
+ \label{fig:dirty}
+\end{figure}
+
+Running Allosaurus on data from the language produced results as shown in \hyperref[fig:heart]{Fig \ref*{fig:heart}}.
+
+In the Chamicuro figures, the rows of transcription are as follows:
+\begin{itemize}
+    \item HumanPhnt: a manual phonetic transcription
+    \item PhoneticAllo: Allosaurus's transcription limited to all attested phonemes and allophones in the language
+    \item HumanPhnm: a manual phonemic transcription.
+    \item PhonemicAllo: Allosaurus's transcription limited to attested phonemes in the language
+    \item Orthography: An orthographic transcription, items in brackets were not transcribed by a native speaker.
+    \item Translation: An English translation of the segment
+\end{itemize}   
+
+\subsubsection{The Good}
+In these results, vowels were quite consistently recognized. From the point of view of perception, vowels are especially resonant and most likely to be perceived, even at a distance. It makes sense that the most resonant sounds, like vowels would be the ones that would be maintained over the distance. These have plenty of robust harmonics that could be used to identify the phone.
+
+Intervocalic consonants were consistently recognized in louder segments (see /akə/ in figure \hyperref[fig:heart]{Figure~\ref*{fig:heart}} and notice the clear vertical line of the first /k/ in the spectrogram.
+
+\subsubsection{The Bad}
+Sibilants and affricates were hit-and-miss, but to be fair many of the retroflexed affricates were not in the training inventory (\ml{is this true?}).
+
+\subsubsection{The Ugly}
+Consonants, especially voiceless stops, were often conspicuously absent. The last syllable /ki/ of \hyperref[fig:heart]{Figure~\ref*{fig:heart}}, was never recognized by Allosaurus, even though it is clearly audible to the human ear. The initial /p/ in \hyperref[fig:dirty]{Figure~\ref*{fig:dirty}} is also never realized by Allosaurus.
+
+This should not be surprising as stops are some of the lowest phones on the sonority scale and they are likely to be hard to recognize from a distance from the noise that obscures it. See \hyperref[sec:detail]{section~\ref*{sec:detail}} for more discussion of loss of phonetic detail.
+Without a large percentage of the transcribed stops, I had no hope of analyzing the syllable structure of the language.
+
+See Wolf \cite{Wolf}. 
+
+\subsubsection{Conclusions}
+The Chamicuro results were disheartening as I have seen much better output for other languages. As discussed in \hyperref[sec:recQual]{section~\ref*{sec:recQual}}, it is clear that the recording was not acceptable for this use, and despite my best efforts to clean up the recording (see \hyperref[app:audio]{Appendix~\ref*{app:audio}}) and to hack the phonetic inventory with different variations, I was not able to improve the results. 
+
+Interestingly, the generic output of Allosaurus in \hyperref[fig:dirty]{Figure~\ref*{fig:dirty}} was actually the only one to recover an initial consonant, even though it was incorrect. It is hard to say whether Allosaurus's Phonetic, Phonemic, or Generic annotation was the best.
+
+%Knowing that the system worked well on other languages, I started to investigate to see if any edge cases had been introduced.
+
+\section{Trial 2: Ewondo}
+Ewondo is...
+
+As the Chamicuro data did not provide the quality I had seen with other recordings and languages, I decided to return to Ewondo, where I had already seen some promising results. 
+
+\subsection{Data Preparation}
+Allosaurus expects short segments of audio, and shorter segments are easier to transcribe, so the data needed to be segmented into clips. The 90-second clip was segmented in SayMore into 14 clips at pauses for easy transcription. I then manually transcribed the entire recording to have a basis for comparison.
+
+The recording quality was quite good, and it seems that a nearby microphone was used, though probably not a headset microphone. As a result, some of the least sonorant consonants were less prominent, but still greatly improved from the Chamicuro data.
+
+The Orthographic transcription was transcribed by my colleague NGONO Louis Pascal, a native Ewondo speaker. Some segments were not transcribed in the first pass, and I had to transcribe them later, so any items in brackets in the orthography section are my own unverified transcription.
+
+\subsection{Phonetic and Phonemic Inventory}
+
+The Phonemic Inventory used for Ewondo was:\\
+/a/, /b/, /d/, /dz/, /e/, /ɛ/, /ɘ/, /f/, /ɡ/, /ɡb/, /i͓/, /j/, /k/, /kp/, /l/, /m/, /mb/, /ɱv/, /n/, /nd/, /ndz/, /ɲ/, /ŋ/, /ŋɡ/, /ŋmɡb/, /o/, /ɔ/, /s/, /t/, /ts/, /u/, /v/, /w/, /z/
+\cite{Moran2019 & Abega}
+
+The Phonetic Inventory used for Ewondo was: \\
+/a/, /ᴂ/, /ɐ/, /b/, /b̥/, /d/, /dz/, /dʒ/, /d͡ʒ/, /e/, /ə/, /ɛ/, /ɘ/, /f/, /ɡ/, /ɡb/, /h/, /ɦ/, /i/, /j/, /k/, /k͡p/, /k͡p̚/, /l/, /m/, /m͡b/, /mv/, /ɱ/, /ɱv/, /n/, /nd/, /ndz/, /nj/, /nʲ/, /ɲ/, /ŋ/, /ŋ͡ɡ/, /ŋ͡m/, /ŋmɡb/, /o/, /ɔ/, /p/, /r/, /ɾ/, /s/, /t/, /ts/, /t͡s/, /t͡ʃ/, /u/, /ɰ/, /v/, /w/, /z/
+\cite{Abega}
+
+The following phones are not in the Training set, but as most of them are affricates. Allosaurus doesn't really distinguish most affricates as combined units, and is more likely to find the individual elements instead (i.e. /n/ and /d/). \\
+/ᴂ/, /dz/, /ɡb/, /kp/, /mb/, /mv/, /ɱv/, /nd/, /ndz/, /nj/, /ŋɡ/, /ŋm/, /ŋmɡb/
+
+\subsection{Results}
+All of the Ewondo transcribed segments are available at the end of this paper. For the Ewondo annotations, the rows in each annotation are defined as follows:
+\begin{itemize}
+    \item Clip: The reference number of the audio clip.
+    \item HumanPhnt: a manual phonetic transcription
+    \item PhoneticAllo: Allosaurus's transcription limited to all attested phonemes and allophones in the language
+    \item PhonemicAllo: Allosaurus's transcription limited to attested phonemes in the language
+    \item Orthography: An orthographic transcription, items in brackets were not transcribed by a native speaker.
+    \item Translation: An English translation of the segment
+\end{itemize} 
+
+
+Phone Levenshtein: 393
+Number of Phones in Reference: 751
+52\% Phone Error rate
+
+Character Levenshtein: 414
+Number of Chars in Reference: 776
+53\% Character error rate. 
+
+
+\section{Making Allosaurus Better}
+
+One obvious future improvement for Allosaurus would be the addition (or improvement) of suprasegmentals, such as tone, stress, and length. 
+
+\subsection{Timing Data}
+All (or nearly all) timing data is normalized (lost) in the output of Allosaurus. This is with the exception of the order of phones. If a /k/ was recognized, the system cannot report a specific time-range within which it is located. This is unfortunate, as this information would be useful in identifying segment errors, but one already has the data needed to align the transcribed text with the audio. A standard method is to use a text-to-speech system such as eSpeak \cite{espeak} to generate a waveform from text, and then use a forced-alignment tool to align the intensity spikes of the two audio segments.
+
+\subsubsection{Ambiguous Segments}
+Related to this phenomenon are some inconsistencies in the training data. Transcription is a process where many decisions are made based on non-phonetic information, such as morae (segment length) or syllable structure. In the list of 180+ phones in the training set, and there are many language-specific distinctions made on the grounds of timing or syllable structure, and it is my understanding that the system is largely blind to timing changes. If this is true, it does not make much sense to output unreliable information that was in the training set but that the system cannot evaluate.
+
+I know that the Allosaurus cannot recognize any segment not attested in the training data, and with my custom inventory, both /t s/ and /t͡s/ are being output in the Ewondo transcriptions. This means that there are exemplars of both in the dataset, and the system is attempting to distinguish between them. Unfortunately, the difference between /t s/ and /t͡s/ is timing-related at best, and at worst a language specific convention used when one consonant is needed instead of two. It does not seem helpful to make this distinction at the phonetic level, and no language is likely to need to distinguish /t s/ from /t͡s/. Instead, all exemplars trained for either /t s/ or /t͡s/ should be treated as the same segment, and "displayed" as one or the other based on the provided inventory. I propose normalizing the transcription of the training data to remove the tie bar and treat all consecutive phonemes as sequences. This will effectively give more exemplars of each individual segment.
+
+The next problematic group contains sequences like /gʷ/, a labialized voiced velar plosive. Like the ambiguous sequences above, the distinction between /gʷ/ and /g w/ is mostly language specific, but may be based on slight changes in timing and intensity. Again, a language is unlikely to distinguish phonemically between /gʷ/ and /g w/, and the system is unlikely to be able to successfully reliably distinguish the segemnt. I propose a trial where all segments with the superscript notation (palatalization, prenasalization, labialization, etc) are normalized to their full-size IPA representation before training the model. If an "equivalent" grouping is given in the language inventory, then the output should display the output (/gʷ/ or /g w/) in the required format.    
+
+\subsubsection{Vowel Length}
+Vowel length is another scalar suprasegmental that is dependant on context, prosody, language and speaker and can not be reliably determined without intimate knowledge of the language. The system does not reliably distinguish between long and short vowels, and doing so from a single utterance is not feasible (is a single vowel long or short?). I propose that all segments tagged with length in the dataset /ː/ be normalized to remove length distinctions, as well as removing syllabic marks, if they are included in the training set.
+
+\subsubsection{Further "equivalent" segments.}
+One of the most common unusual phones in the full-repertoire output is /b̥/, a devoiced voiced bilabial stop. To begin with, this is an odd segment, and most would cancel the double negative and call it /p/, a voiceless bilabial stop. It is most likely transcribed when a phonemic /b/ is devoiced in a specific environment, and the transcriber wishes to maintain the underlying distinction. From a phonetic standpoint,  /b̥/ and /p/ should probably be considered phonetically equivalent and normalized to /p/ in the training set, and the /b̥/ should only be output when requested in the phonetic inventory.
+The same is true for other devoiced consonant segments such as /d̥/ and /t/.
+
+Devoicing in vowels, while phonetically faint, is relevant and is only marked in one way, so it should be maintained in the system.
+
+\subsection{Tone}
+It is my understanding that in most automated speech recognition systems, the first formant (f0) is ignored, as it says more about the vocal tract geometry (and by extension, size and pitch range) of the person than it does about the phoneme being uttered. ASR Technicians consider the first formant to be misleading noise. This poses a problem for tonal languages, where tonal variation (as opposed to the starting point) is necessary.
+
+Tone (pitch) variation can be extracted from an utterance, and could be overlaid if timing data was still present in (or was aligned with) the main phonetic output. A very similar second pass could take all utterances by a speaker, normalize the tone range to a standard minimum and maximum, and apply it only to tone-bearing phones. A set of "expected" tonemes would limit the noisy output to only appropriate representations. Obviously this is non-trivial, but it seems a priori that this secondary analysis would be best left for a later pass, and only when requested.
+
+Ambiguous Segments
+
+
+Length
+By its nature, 
+
+%While I would have expected Allosaurus to Output simpler phone from a nearby place of articulation, it did not because they were excluded.
+
+%I will try to hack the provided phonological inventory of the language to find as many nearby segments as possible. While the first run may not be appropriate for the language, Higgins may be able to correct it. 
+
+\bibliographystyle{IEEEbib}
+\bibliography{Mendeley}
+
+\newpage
+\appendix
+\section{Audio Cleanup}
+Several challenges related to the quality of audio were identified in the section on \hyperref[sec:dataprep]{Data Preparation}. While I attempted to clean up the Chamicuro data to achieve a better result, my efforts were ultimately fruitless. Nevertheless, this section contains discussion on attempts to repair audio data. 
+
+\subsection{Repairing Volume}
+\textit{As one would expect, garbage in garbage out.} When recording for language documentation, it is expected that one will use a quality microphone close to the speaker. This creates the ideal situation for less noise and high fidelity of the speaker's voice. Increasing distance creates negative effects such as Echo and greater noise.
+In the case where volume is not ideal, adjusting the volume is straightforward. I applied in normalization that searches for the highest peaks in the recording and brings them down to an appropriate level. I alternately tried compression, which will only quiet the loudest sounds in a recording. The result, as I said before, seemed to be a perfectly acceptable volume level.
+
+\subsection{Noise Reduction}
+Typically noise is removed by analyzing several seconds of non-speech in the environment, and removing similar sound from the rest of the recording. This works very well in quiet segments, but often noise is either not removed from the speech data or desired speech data is partially removed along with the noise. If the noise is removed before compression, some of the data that you might have been able to recover is lost. If the noise is removed after compression, some of the noise that has been amplified may not be completely removed. This is a catch-22. 
+
+\subsubsection{Repairing Echo}
+While it is superficially easy to introduce Echo into a recording, it is very difficult to reliably remove. If I had a clean copy of the audio, I could generate the echo to get a profile and then subtract that Echo from the original recording. Of course, if I had a clean copy of the recording, I wouldn't be doing this process. With the available toolset, all I could expect was to hope to remove some of the echo in the quiet moments with standard noise reduction.
+
+\subsubsection{Repairing Attentuation}
+If the high frequencies are quiet but still recoverable, it might be possible to boost them using an equalizer. In a humid environment, and that part of Peru is a humid environment, the curve of attenuation is almost a straight line. Thus, I tried decreasing the low frequencies while increasing the high frequencies to simulate being nearer to the speaker. 
+
+
+
+\newpage
+\begin{figure*}[h]
+\centering{\large{Ewondo Data}\\~\\}
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip01.png}
+  \caption{Ewondo Clip 1}
+ \label{fig:E1}
+\end{figure*}
+
+\begin{figure*}[h!]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip02.png}
+  \caption{Ewondo Clip 2}
+ \label{fig:E2}
+\end{figure*}
+
+\begin{figure*}[h!]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip03.png}
+  \caption{Ewondo Clip 3}
+ \label{fig:E3}
+\end{figure*}
+\begin{figure*}[h!]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip04.png}
+  \caption{Ewondo Clip 4}
+ \label{fig:E4}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip05.png}
+ \caption{Ewondo Clip 5}
+ \label{fig:E5}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip06.png}
+ \caption{Ewondo Clip 6}
+ \label{fig:E6}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip07.png}
+ \caption{Ewondo Clip 7}
+ \label{fig:E7}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip08.png}
+ \caption{Ewondo Clip 8}
+ \label{fig:E8}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip09-1.png}
+ \caption{Ewondo Clip 9-1}
+ \label{fig:E9-1}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip09-2.png}
+ \caption{Ewondo Clip 9-2}
+ \label{fig:E9-2}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip10.png}
+ \caption{Ewondo Clip 10}
+ \label{fig:E10}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip11.png}
+ \caption{Ewondo Clip 11}
+ \label{fig:E11}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip12.png}
+ \caption{Ewondo Clip 12}
+ \label{fig:E12}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip13.png}
+ \caption{Ewondo Clip 13}
+ \label{fig:E13}
+\end{figure*}
+
+\begin{figure*}[h]
+  \includegraphics[ width=\textwidth,
+                    keepaspectratio  % may need to uncomment this option
+                   ]{media/Clip14.png}
+ \caption{Ewondo Clip 14}
+ \label{fig:E14}
+\end{figure*}
+
+
+
+
+
+%\section{Conclusion}
+
+% References should be produced using the bibtex program from suitable
+% BiBTeX files (here: strings, refs, manuals). The IEEEbib.bst bibliography
+% style file from IEEE produces unsorted bibliography list.
+% -------------------------------------------------------------------------
+
+
+\end{document}
+

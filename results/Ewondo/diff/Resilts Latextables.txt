@@ -1,0 +1,251 @@
+﻿\begin{table*}[]
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \\
+\midrule
+\textbf{'b'} & {[}2{]} & \textbf{'p'} & {[}1{]} & \textbf{0.125} & 0.125 & 1 & 3 \\
+\textbf{'ɔ'} & {[}9{]} & \textbf{'o'} & {[}9{]} & \textbf{0.125} & 0.125 & 1 & 1 \\
+\textbf{'ə'} & {[}9{]} & \textbf{'ɐ'} & {[}9{]} & \textbf{0.125} & 0.125 & 1 & 1 \\
+\textbf{'s'} & {[}3{]} & \textbf{'z'} & {[}4{]} & \textbf{0.125} & 0.125 & 1 & 1 \\
+\textbf{'t'} & {[}1{]} & \textbf{'d'} & {[}2{]} & \textbf{0.125} & 0.125 & 1 & 1 \\
+\textbf{'æː'} & {[}9, 9{]} & \textbf{'a'} & {[}9{]} & \textbf{0.25} & 0.25 & 1 & 1 \\
+\textbf{'e'} & {[}9{]} & \textbf{'ɐ'} & {[}9{]} & \textbf{0.25} & 0.25 & 1 & 1 \\
+\textbf{'ə'} & {[}9{]} & \textbf{'ɛ'} & {[}9{]} & \textbf{0.25} & 0.25 & 1 & 1 \\
+\textbf{'ɛ'} & {[}9{]} & \textbf{'ə'} & {[}9{]} & \textbf{0.25} & 0.25 & 1 & 1 \\
+\textbf{'i'} & {[}8{]} & \textbf{'e'} & {[}9{]} & \textbf{0.25} & 0.25 & 1 & 1 \\
+\textbf{'q'} & {[}1{]} & \textbf{'k'} & {[}1{]} & \textbf{0.25} & 0.25 & 1 & 1 \\
+\textbf{'d͡z i'} & {[}2, 8{]} & \textbf{'t͡s e'} & {[}1, 9{]} & \textbf{0.375} & 0.188 & 2 & 1 \\
+\textbf{'a'} & {[}9{]} & \textbf{'ɛ'} & {[}9{]} & \textbf{0.375} & 0.375 & 1 & 3 \\
+\textbf{'ə'} & {[}9{]} & \textbf{'e'} & {[}9{]} & \textbf{0.375} & 0.375 & 1 & 1 \\
+\textbf{'ə'} & {[}9{]} & \textbf{'e'} & {[}9{]} & \textbf{0.375} & 0.375 & 1 & 2 \\
+\textbf{'ə'} & {[}9{]} & \textbf{'o'} & {[}9{]} & \textbf{0.375} & 0.375 & 1 & 2 \\
+\textbf{'b ɛ'} & {[}2, 9{]} & \textbf{'p i'} & {[}1, 8{]} & \textbf{0.5} & 0.25 & 2 & 1 \\
+\textbf{'s a'} & {[}3, 9{]} & \textbf{'z ɛ'} & {[}4, 9{]} & \textbf{0.5} & 0.25 & 2 & 1 \\
+\end{tabular}
+\end{table*}
+
+\begin{table*}[]
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \
+\midrule
+
+\textbf{'a'} & {[}9{]} & \textbf{'ɐ'} & {[}9{]} & \textbf{0.5} & 0.5 & 1 & 6 \\
+\textbf{'u'} & {[}8{]} & \textbf{'o'} & {[}9{]} & \textbf{0.5} & 0.5 & 1 & 2 \\
+\textbf{'m'} & {[}5{]} & \textbf{'n'} & {[}5{]} & \textbf{0.5625} & 0.562 & 1 & 3 \\
+\textbf{'a'} & {[}9{]} & \textbf{'ə'} & {[}9{]} & \textbf{0.625} & 0.625 & 1 & 19 \\
+\textbf{'aː'} & {[}9, 9{]} & \textbf{'ɛ'} & {[}9{]} & \textbf{0.625} & 0.625 & 1 & 1 \\
+\textbf{'ə'} & {[}9{]} & \textbf{'a'} & {[}9{]} & \textbf{0.625} & 0.625 & 1 & 1 \\
+\textbf{'i'} & {[}8{]} & \textbf{'ə'} & {[}9{]} & \textbf{0.625} & 0.625 & 1 & 1 \\
+\textbf{'a b'} & {[}9, 2{]} & \textbf{'ə p'} & {[}9, 1{]} & \textbf{0.75} & 0.375 & 2 & 1 \\
+\textbf{'b a'} & {[}2, 9{]} & \textbf{'p ə'} & {[}1, 9{]} & \textbf{0.75} & 0.375 & 2 & 1 \\
+\textbf{'a'} & {[}9{]} & \textbf{'o'} & {[}9{]} & \textbf{0.75} & 0.75 & 1 & 2 \\
+\textbf{'s'} & {[}3{]} & \textbf{'t͡s'} & {[}1{]} & \textbf{0.75} & 0.75 & 1 & 1 \\
+\textbf{'u'} & {[}8{]} & \textbf{'i'} & {[}8{]} & \textbf{0.75} & 0.75 & 1 & 1 \\
+\textbf{'i b'} & {[}8, 2{]} & \textbf{'e v'} & {[}9, 4{]} & \textbf{0.8125} & 0.406 & 2 & 1 \\
+\textbf{'a'} & {[}9{]} & \textbf{'ɔ'} & {[}9{]} & \textbf{0.875} & 0.875 & 1 & 2 \\
+\textbf{'aː'} & {[}9, 9{]} & \textbf{'ə'} & {[}9{]} & \textbf{0.875} & 0.875 & 1 & 2 \\
+\textbf{'ɔ'} & {[}9{]} & \textbf{'a'} & {[}9{]} & \textbf{0.875} & 0.875 & 1 & 1 \\
+\textbf{'ə'} & {[}9{]} & \textbf{'u'} & {[}8{]} & \textbf{0.875} & 0.875 & 1 & 2 \\
+\textbf{'u'} & {[}8{]} & \textbf{'ə'} & {[}9{]} & \textbf{0.875} & 0.875 & 1 & 5 \\
+\textbf{'z'} & {[}4{]} & \textbf{'t͡s'} & {[}1{]} & \textbf{0.875} & 0.875 & 1 & 1 \\
+\textbf{'k r'} & {[}1, 6{]} & \textbf{'p ɾ'} & {[}1, 6{]} & \textbf{1} & 0.5 & 2 & 1 \\
+\end{tabular}
+\end{table*}
+
+\begin{table*}[]
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \
+\midrule
+\textbf{'k'} & {[}1{]} & \textbf{'p'} & {[}1{]} & \textbf{1} & 1 & 1 & 1 \\
+\textbf{'k'} & {[}1{]} & \textbf{'p'} & {[}1{]} & \textbf{1} & 1 & 1 & 1 \\
+\textbf{'n'} & {[}5{]} & \textbf{'l'} & {[}6{]} & \textbf{1} & 1 & 1 & 1 \\
+\textbf{'j'} & {[}7{]} & \textbf{'i'} & {[}8{]} & \textbf{1.1875} & 1.188 & 1 & 1 \\
+\textbf{'e z'} & {[}9, 4{]} & \textbf{'ə t͡s'} & {[}9, 1{]} & \textbf{1.25} & 0.625 & 2 & 1 \\
+\textbf{'a'} & {[}9{]} & \textbf{'u'} & {[}8{]} & \textbf{1.25} & 1.25 & 1 & 2 \\
+\textbf{'d͡ʒ'} & {[}2{]} & \textbf{'s'} & {[}3{]} & \textbf{1.25} & 1.25 & 1 & 1 \\
+\textbf{'ɔ j'} & {[}9, 7{]} & \textbf{'o i'} & {[}9, 8{]} & \textbf{1.3125} & 0.656 & 2 & 1 \\
+\textbf{'a b eː'} & {[}9, 2, 9, 9{]} & \textbf{'ə p ə'} & {[}9, 1, 9{]} & \textbf{1.375} & 0.458 & 3 & 1 \\
+\textbf{'f u'} & {[}3, 8{]} & \textbf{'s i'} & {[}3, 8{]} & \textbf{1.375} & 0.688 & 2 & 1 \\
+\textbf{'z e'} & {[}4, 9{]} & \textbf{'t͡s o'} & {[}1, 9{]} & \textbf{1.375} & 0.688 & 2 & 1 \\
+\textbf{'j e'} & {[}7, 9{]} & \textbf{'i ə'} & {[}8, 9{]} & \textbf{1.5625} & 0.781 & 2 & 1 \\
+\textbf{'t u'} & {[}1, 8{]} & \textbf{'k o'} & {[}1, 9{]} & \textbf{1.5625} & 0.781 & 2 & 1 \\
+\textbf{'m b a'} & {[}5, 2, 9{]} & \textbf{'ŋ p ə'} & {[}5, 1, 9{]} & \textbf{1.75} & 0.583 & 3 & 1 \\
+\textbf{'b i'} & {[}2, 8{]} & \textbf{'d j'} & {[}2, 7{]} & \textbf{1.75} & 0.875 & 2 & 1 \\
+\textbf{'e nː'} & {[}9, 5, 5{]} & \textbf{'i d'} & {[}8, 2{]} & \textbf{1.75} & 0.875 & 2 & 1 \\
+\textbf{'a j'} & {[}9, 7{]} & \textbf{'ə i'} & {[}9, 8{]} & \textbf{1.8125} & 0.906 & 2 & 1 \\
+\textbf{'m'} & {[}5{]} & \textbf{'v'} & {[}4{]} & \textbf{1.8125} & 1.812 & 1 & 1 \\
+\textbf{'a n ə'} & {[}9, 5, 9{]} & \textbf{'ɐ l o'} & {[}9, 6, 9{]} & \textbf{1.875} & 0.625 & 3 & 1 \\
+\textbf{'u k r'} & {[}8, 1, 6{]} & \textbf{'ə t ɾ'} & {[}9, 1, 6{]} & \textbf{1.9375} & 0.646 & 3 & 1 \\
+\end{tabular}
+\end{table*}
+
+\begin{table*}[]
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \
+\midrule
+\textbf{'d'} & {[}2{]} & \textbf{'ɾ'} & {[}6{]} & \textbf{2} & 2 & 1 & 1 \\
+\textbf{'ə m'} & {[}9, 5{]} & \textbf{'ɛ v'} & {[}9, 4{]} & \textbf{2.0625} & 1.031 & 2 & 1 \\
+\textbf{'ŋ ɡ'} & {[}5, 2{]} & \textbf{'n d'} & {[}5, 2{]} & \textbf{2.125} & 1.062 & 2 & 1 \\
+\textbf{'ŋ j'} & {[}5, 7{]} & \textbf{'n i'} & {[}5, 8{]} & \textbf{2.25} & 1.125 & 2 & 1 \\
+\textbf{'a l'} & {[}9, 6{]} & \textbf{'ɔ m'} & {[}9, 5{]} & \textbf{2.4375} & 1.219 & 2 & 1 \\
+\textbf{'r b a b'} & {[}6, 2, 9, 2{]} & \textbf{'l d u d'} & {[}6, 2, 8, 2{]} & \textbf{3.125} & 0.781 & 4 & 1 \\
+\textbf{'k r'} & {[}1, 6{]} & \textbf{'p t'} & {[}1, 1{]} & \textbf{3.125} & 1.562 & 2 & 1 \\
+\textbf{'u m i'} & {[}8, 5, 8{]} & \textbf{'e v ə'} & {[}9, 4, 9{]} & \textbf{3.4375} & 1.146 & 3 & 1 \\
+\textbf{'b a j i'} & {[}2, 9, 7, 8{]} & \textbf{'p ɛ ɡ ə'} & {[}1, 9, 2, 9{]} & \textbf{3.875} & 0.969 & 4 & 1 \\
+\textbf{'k r'} & {[}1, 6{]} & \textbf{'ŋ p'} & {[}5, 1{]} & \textbf{4.0625} & 2.031 & 2 & 1 \\
+\textbf{'x ə ŋ ə'} & {[}3, 9, 5, 9{]} & \textbf{'v e l i'} & {[}4, 9, 6, 8{]} & \textbf{4.25} & 1.062 & 4 & 1 \\
+\textbf{'u w'} & {[}8, 7{]} & \textbf{'i b'} & {[}8, 2{]} & \textbf{4.25} & 2.125 & 2 & 1 \\
+\textbf{'u w'} & {[}8, 7{]} & \textbf{'o d'} & {[}9, 2{]} & \textbf{4.5625} & 2.281 & 2 & 1 \\
+\textbf{'m i'} & {[}5, 8{]} & \textbf{'ɾ n'} & {[}6, 5{]} & \textbf{5.3125} & 2.656 & 2 & 1 \\
+\textbf{'a y i'} & {[}9, 8, 8{]} & \textbf{'ɐ d u'} & {[}9, 2, 8{]} & \textbf{6} & 2 & 3 & 1 \\
+\end{tabular}
+\end{table*}
+
+\begin{table*}[]
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \
+\midrule
+\textbf{'t'} & {[}1{]} & \textbf{'t s'} & {[}1, 3{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'w ɔ'} & {[}7, 9{]} & \textbf{'o'} & {[}9{]} & \textbf{7.375} & 3.688 & 2 & 1 \\
+\textbf{'r m i'} & {[}6, 5, 8{]} & \textbf{'ə o u'} & {[}9, 9, 8{]} & \textbf{7.4375} & 2.479 & 3 & 1 \\
+\textbf{'aː'} & {[}9, 9{]} & \textbf{'a ɐ'} & {[}9, 9{]} & \textbf{7.5} & 3.75 & 2 & 1 \\
+\textbf{'n i'} & {[}5, 8{]} & \textbf{'e'} & {[}9{]} & \textbf{7.5} & 3.75 & 2 & 1 \\
+\textbf{'r i'} & {[}6, 8{]} & \textbf{'e'} & {[}9{]} & \textbf{7.5} & 3.75 & 2 & 1 \\
+\textbf{'a b eː'} & {[}9, 2, 9, 9{]} & \textbf{'p e'} & {[}1, 9{]} & \textbf{7.625} & 2.542 & 3 & 1 \\
+\textbf{'a m'} & {[}9, 5{]} & \textbf{'ɛ'} & {[}9{]} & \textbf{7.625} & 3.812 & 2 & 1 \\
+\textbf{'ə m'} & {[}9, 5{]} & \textbf{'o'} & {[}9{]} & \textbf{7.625} & 3.812 & 2 & 1 \\
+\textbf{'e n'} & {[}9, 5{]} & \textbf{'ə'} & {[}9{]} & \textbf{7.625} & 3.812 & 2 & 1 \\
+\textbf{'m b ɛː ɛ'} & {[}5, 2, 9, 9, 9{]} & \textbf{'b e e'} & {[}2, 9, 9{]} & \textbf{7.75} & 2.583 & 3 & 1 \\
+\textbf{'u'} & {[}8{]} & \textbf{'w o'} & {[}7, 9{]} & \textbf{7.75} & 3.875 & 2 & 1 \\
+\textbf{'u m'} & {[}8, 5{]} & \textbf{'n'} & {[}5{]} & \textbf{7.8125} & 3.906 & 2 & 1 \\
+\textbf{'d z'} & {[}2, 4{]} & \textbf{'d͡ʒ'} & {[}2{]} & \textbf{7.875} & 3.938 & 2 & 1 \\
+\textbf{'u'} & {[}8{]} & \textbf{'w ɔ'} & {[}7, 9{]} & \textbf{7.875} & 3.938 & 2 & 1 \\
+\end{tabular}
+\end{table*}
+
+\begin{table*}[]
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \
+\midrule
+\textbf{'h a'} & {[}6, 9{]} & \textbf{'o'} & {[}9{]} & \textbf{8} & 4 & 2 & 1 \\
+\textbf{'j aː'} & {[}7, 9, 9{]} & \textbf{'ɐ'} & {[}9{]} & \textbf{8} & 4 & 2 & 1 \\
+\textbf{'u'} & {[}8{]} & \textbf{'f i'} & {[}3, 8{]} & \textbf{8} & 4 & 2 & 1 \\
+\textbf{'u'} & {[}8{]} & \textbf{'i ɦ'} & {[}8, 6{]} & \textbf{8} & 4 & 2 & 1 \\
+\textbf{'ə w u'} & {[}9, 7, 8{]} & \textbf{'o o'} & {[}9, 9{]} & \textbf{8.125} & 2.708 & 3 & 1 \\
+\textbf{'ʃ u'} & {[}3, 8{]} & \textbf{'s o e'} & {[}3, 9, 9{]} & \textbf{8.125} & 2.708 & 3 & 1 \\
+\textbf{'m a'} & {[}5, 9{]} & \textbf{'n ə v'} & {[}5, 9, 4{]} & \textbf{8.4375} & 2.812 & 3 & 1 \\
+\textbf{'j'} & {[}7{]} & \textbf{'d i'} & {[}2, 8{]} & \textbf{8.4375} & 4.219 & 2 & 1 \\
+\textbf{'a t'} & {[}9, 1{]} & \textbf{'w ə t͡ʃ'} & {[}7, 9, 1{]} & \textbf{8.5} & 2.833 & 3 & 1 \\
+\textbf{'i n j'} & {[}8, 5, 7{]} & \textbf{'e l'} & {[}9, 6{]} & \textbf{8.5} & 2.833 & 3 & 1 \\
+\textbf{'a b ɛ a'} & {[}9, 2, 9, 9{]} & \textbf{'ə v e'} & {[}9, 4, 9{]} & \textbf{8.5625} & 2.141 & 4 & 1 \\
+\textbf{'m m'} & {[}5, 5{]} & \textbf{'ɾ'} & {[}6{]} & \textbf{9.0625} & 4.531 & 2 & 1 \\
+\textbf{'a m b e a'} & {[}9, 5, 2, 9, 9{]} & \textbf{'n v ə ə'} & {[}5, 4, 9, 9{]} & \textbf{9.375} & 1.875 & 5 & 1 \\
+\textbf{'e j'} & {[}9, 7{]} & \textbf{'a n o'} & {[}9, 5, 9{]} & \textbf{9.4375} & 3.146 & 3 & 1 \\
+\textbf{'ɔ a'} & {[}9, 9{]} & \textbf{'ɡ w ə'} & {[}2, 7, 9{]} & \textbf{9.5625} & 3.188 & 3 & 1 \\
+\textbf{'e t w'} & {[}9, 1, 7{]} & \textbf{'ə k t ə'} & {[}9, 1, 1, 9{]} & \textbf{9.5625} & 3.188 & 3 & 1 \\
+\textbf{'m b ə j'} & {[}5, 2, 9, 7{]} & \textbf{'ŋ ɡ o'} & {[}5, 2, 9{]} & \textbf{9.625} & 2.406 & 4 & 1 \\
+\textbf{'u s a w'} & {[}8, 3, 9, 7{]} & \textbf{'z e ɡ'} & {[}4, 9, 2{]} & \textbf{10.625} & 2.656 & 4 & 1 \\
+\textbf{'ɔː w i'} & {[}9, 9, 7, 8{]} & \textbf{'o v'} & {[}9, 4{]} & \textbf{10.6875} & 3.562 & 3 & 1 \\
+\textbf{'a a b u i'} & {[}9, 9, 2, 8, 8{]} & \textbf{'ə p o ɾ'} & {[}9, 1, 9, 6{]} & \textbf{11.5} & 2.3 & 5 & 1 \\
+\end{tabular}
+\end{table*}
+
+\begin{table*}[]
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \
+\midrule
+\textbf{'r a s'} & {[}6, 9, 3{]} & \textbf{'ɾ'} & {[}6{]} & \textbf{14.5} & 4.833 & 3 & 1 \\
+\textbf{'u r'} & {[}8, 6{]} & \textbf{'s p i'} & {[}3, 1, 8{]} & \textbf{14.5625} & 4.854 & 3 & 1 \\
+\textbf{'a m ə'} & {[}9, 5, 9{]} & \textbf{'ɐ'} & {[}9{]} & \textbf{14.625} & 4.875 & 3 & 1 \\
+\textbf{'ʃ u m'} & {[}3, 8, 5{]} & \textbf{'s'} & {[}3{]} & \textbf{14.875} & 4.958 & 3 & 1 \\
+\textbf{'w e'} & {[}7, 9{]} & \textbf{'o j l ə'} & {[}9, 7, 6, 9{]} & \textbf{15.625} & 3.906 & 4 & 1 \\
+\textbf{'ɛː h a v'} & {[}9, 9, 6, 9, 4{]} & \textbf{'i o'} & {[}8, 9{]} & \textbf{15.875} & 3.969 & 4 & 1 \\
+\textbf{'w a'} & {[}7, 9{]} & \textbf{'o d e d'} & {[}9, 2, 9, 2{]} & \textbf{16.4375} & 4.109 & 4 & 1 \\
+\textbf{'u w e'} & {[}8, 7, 9{]} & \textbf{'m'} & {[}5{]} & \textbf{17.25} & 5.75 & 3 & 1 \\
+\end{tabular}
+\end{table*}
+
+\begin{table*}[]
+\begin{tabular}{llllllll}
+\textbf{'b'} & {[}2{]} & \textbf{'ə p i j'} & {[}9, 1, 8, 7{]} & \textbf{21.875} & 5.469 & 4 & 1 \\
+\textbf{'ə m m i'} & {[}9, 5, 5, 8{]} & \textbf{'a'} & {[}9{]} & \textbf{22.25} & 5.562 & 4 & 1 \\
+\textbf{'m'} & {[}5{]} & \textbf{'o n e b'} & {[}9, 5, 9, 2{]} & \textbf{22.3125} & 5.578 & 4 & 1 \\
+\textbf{'b ɛː'} & {[}2, 9, 9{]} & \textbf{'l v e r i'} & {[}6, 4, 9, 6, 8{]} & \textbf{22.6875} & 4.537 & 5 & 1 \\
+\textbf{'j i b ə n'} & {[}7, 8, 2, 9, 5{]} & \textbf{'ɛ v'} & {[}9, 4{]} & \textbf{22.6875} & 4.537 & 5 & 1 \\
+\textbf{'i'} & {[}8{]} & \textbf{'ə k v a v'} & {[}9, 1, 4, 9, 4{]} & \textbf{29.5} & 5.9 & 5 & 1 \\
+\textbf{'d u i j e'} & {[}2, 8, 8, 7, 9{]} & \textbf{'d͡ʒ'} & {[}2{]} & \textbf{29.625} & 5.925 & 5 & 1 
+\end{tabular}
+\end{table*}
+
+\begin{table*}[]
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \
+\midrule
+\textbf{'∅'} & {[}0{]} & \textbf{'a'} & {[}9{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'d'} & {[}2{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'e'} & {[}9{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'ɡ'} & {[}2{]} & \textbf{7.25} & 7.25 & 1 & 2 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'h'} & {[}6{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'i'} & {[}8{]} & \textbf{7.25} & 7.25 & 1 & 2 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'j'} & {[}7{]} & \textbf{7.25} & 7.25 & 1 & 4 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'k'} & {[}1{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'n'} & {[}5{]} & \textbf{7.25} & 7.25 & 1 & 2 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'p'} & {[}1{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'t'} & {[}1{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'v'} & {[}4{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'w'} & {[}7{]} & \textbf{7.25} & 7.25 & 1 & 2 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'z'} & {[}4{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'b e'} & {[}2, 9{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'ɡ o'} & {[}2, 9{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'ɦ o'} & {[}6, 9{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'s o'} & {[}3, 9{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'s p'} & {[}3, 1{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'s t'} & {[}3, 1{]} & \textbf{14.5} & 7.25 & 2 & 2 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'n d o'} & {[}5, 2, 9{]} & \textbf{21.75} & 7.25 & 3 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'ŋ d e'} & {[}5, 2, 9{]} & \textbf{21.75} & 7.25 & 3 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'u n ə'} & {[}8, 5, 9{]} & \textbf{21.75} & 7.25 & 3 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'w l o'} & {[}7, 6, 9{]} & \textbf{21.75} & 7.25 & 3 & 1 \\
+\textbf{'∅'} & {[}0{]} & \textbf{'s k e a'} & {[}3, 1, 9, 9{]} & \textbf{29} & 7.25 & 4 & 1 \\
+\end{tabular}
+\end{table*}
+
+
+\begin{table*}
+\begin{tabular}{llllllll}
+\toprule
+\textbf{Human} & Son & ASR & Son & Feat. Dist. & Score & Lev. & Freq. \
+\midrule
+\textbf{'a'} & {[}9{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 2 \\
+\textbf{'ɔ'} & {[}9{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'e'} & {[}9{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'ə'} & {[}9{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'j'} & {[}7{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 2 \\
+\textbf{'k'} & {[}1{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'m'} & {[}5{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'n'} & {[}5{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 6 \\
+\textbf{'u'} & {[}8{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 3 \\
+\textbf{'y'} & {[}8{]} & \textbf{'∅'} & {[}0{]} & \textbf{7.25} & 7.25 & 1 & 1 \\
+\textbf{'a j'} & {[}9, 7{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'a m'} & {[}9, 5{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'b ə'} & {[}2, 9{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'e m'} & {[}9, 5{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'m i'} & {[}5, 8{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'t ə'} & {[}1, 9{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'u n'} & {[}8, 5{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'w u'} & {[}7, 8{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'y a'} & {[}8, 9{]} & \textbf{'∅'} & {[}0{]} & \textbf{14.5} & 7.25 & 2 & 1 \\
+\textbf{'a ŋ ɡ'} & {[}9, 5, 2{]} & \textbf{'∅'} & {[}0{]} & \textbf{21.75} & 7.25 & 3 & 1 \\
+\textbf{'d͡ʒ i j'} & {[}2, 8, 7{]} & \textbf{'∅'} & {[}0{]} & \textbf{21.75} & 7.25 & 3 & 1 \\
+\textbf{'i j a'} & {[}8, 7, 9{]} & \textbf{'∅'} & {[}0{]} & \textbf{21.75} & 7.25 & 3 & 1 \\
+\textbf{'m n e'} & {[}5, 5, 9{]} & \textbf{'∅'} & {[}0{]} & \textbf{21.75} & 7.25 & 3 & 1 \\
+\textbf{'o n ə z'} & {[}9, 5, 9, 4{]} & \textbf{'∅'} & {[}0{]} & \textbf{29} & 7.25 & 4 & 1 \\
+\end{tabular}
+\end{table*}
+

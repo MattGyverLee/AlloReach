@@ -1,0 +1,180 @@
+﻿a	open front unrounded vowel
+ă	open front unrounded vowel, extra-short suprasegmental
+aː	open front unrounded vowel, long suprasegmental
+æ	near-open front unrounded vowel
+äInvalid IPA
+ɐ	near-open central unrounded vowel
+ɐ̞	open central unrounded vowel
+ɑ	open back unrounded vowel
+b	voiced bilabial plosive consonant
+b̞	voiced bilabial plosive consonant, lowered diacritic
+bː	voiced bilabial plosive consonant, long suprasegmental
+bʲ	voiced bilabial plosive consonant, palatalized diacritic
+bʷ	voiced bilabial plosive consonant, labialized diacritic
+ɓ	voiced bilabial implosive consonant
+ç	voiceless palatal non-sibilant-fricative consonant
+c	voiceless palatal plosive consonant
+ɕ	voiceless alveolo-palatal sibilant-fricative consonant
+ɕː	voiceless alveolo-palatal sibilant-fricative consonant, long suprasegmental
+d	voiced alveolar plosive consonant
+d̚	voiced alveolar plosive consonant, no-audible-release diacritic
+ð	voiced dental non-sibilant-fricative consonant
+dː	voiced alveolar plosive consonant, long suprasegmental
+dʲ	voiced alveolar plosive consonant, palatalized diacritic
+d͡z	voiced alveolar sibilant-affricate consonant
+d͡ʑ	voiced alveolo-palatal sibilant-affricate consonant
+dʒ	voiced palato-alveolar sibilant-affricate consonant
+d͡ʒ	voiced palato-alveolar sibilant-affricate consonant
+d͡ʒː	voiced palato-alveolar sibilant-affricate consonant, long suprasegmental
+ɗ	voiced alveolar implosive consonant
+e	close-mid front unrounded vowel
+e̞	mid front unrounded vowel
+eː	close-mid front unrounded vowel, long suprasegmental
+ə	mid central unrounded vowel
+ɛ	open-mid front unrounded vowel
+ɤ	close-mid back unrounded vowel
+ɤ̆	close-mid back unrounded vowel, extra-short suprasegmental
+ɤɐ̞	close-mid back unrounded vowel, open central unrounded vowel
+f	voiceless labio-dental non-sibilant-fricative consonant
+fː	voiceless labio-dental non-sibilant-fricative consonant, long suprasegmental
+fʲ	voiceless labio-dental non-sibilant-fricative consonant, palatalized diacritic
+fʷ	voiceless labio-dental non-sibilant-fricative consonant, labialized diacritic
+ɡ	voiced velar plosive consonant
+ɡ̥	voiced velar plosive consonant, voiceless diacritic
+ɡː	voiced velar plosive consonant, long suprasegmental
+ɡ̟ʲ	voiced velar plosive consonant, advanced diacritic, palatalized diacritic
+ɡʲ	voiced velar plosive consonant, palatalized diacritic
+ɡʷ	voiced velar plosive consonant, labialized diacritic
+ɣ	voiced velar non-sibilant-fricative consonant
+h	voiceless glottal non-sibilant-fricative consonant
+hʷ	voiceless glottal non-sibilant-fricative consonant, labialized diacritic
+ɦ	voiced glottal non-sibilant-fricative consonant
+i̞	close front unrounded vowel, lowered diacritic
+i̯	close front unrounded vowel, non-syllabic diacritic
+i̥	close front unrounded vowel, voiceless diacritic
+iː	close front unrounded vowel, long suprasegmental
+IInvalid IPA
+ɪ	near-close near-front unrounded vowel
+ɨ	close central unrounded vowel
+j	voiced palatal approximant consonant
+ʝ	voiced palatal non-sibilant-fricative consonant
+ɟ	voiced palatal plosive consonant
+k	voiceless velar plosive consonant
+k̟̚	voiceless velar plosive consonant, advanced diacritic, no-audible-release diacritic
+kː	voiceless velar plosive consonant, long suprasegmental
+kʰ	voiceless velar plosive consonant, aspirated diacritic
+k̟ʲ	voiceless velar plosive consonant, advanced diacritic, palatalized diacritic
+kʲ	voiceless velar plosive consonant, palatalized diacritic
+k͡p̚	voiceless labio-velar plosive consonant, no-audible-release diacritic
+kʷ	voiceless velar plosive consonant, labialized diacritic
+kʷʼ	voiceless velar plosive consonant, labialized diacritic, ejective diacritic
+kx	voiceless velar non-sibilant-affricate consonant
+kʼ	voiceless velar ejective consonant
+l	voiced alveolar lateral-approximant consonant
+lː	voiced alveolar lateral-approximant consonant, long suprasegmental
+lʲ	voiced alveolar lateral-approximant consonant, palatalized diacritic
+ɫ	voiced alveolar lateral-approximant velarized consonant
+ʎ	voiced palatal lateral-approximant consonant
+m	voiced bilabial nasal consonant
+mː	voiced bilabial nasal consonant, long suprasegmental
+mʲ	voiced bilabial nasal consonant, palatalized diacritic
+mʷ	voiced bilabial nasal consonant, labialized diacritic
+ɱ	voiced labio-dental nasal consonant
+n	voiced alveolar nasal consonant
+n̺	voiced alveolar nasal consonant, apical diacritic
+nː	voiced alveolar nasal consonant, long suprasegmental
+nʲ	voiced alveolar nasal consonant, palatalized diacritic
+ɴ	voiced uvular nasal consonant
+ɲ	voiced palatal nasal consonant
+ŋ	voiced velar nasal consonant
+ŋ̟	voiced velar nasal consonant, advanced diacritic
+ŋ͡m	voiced labio-velar nasal consonant
+o	close-mid back rounded vowel
+o̥	close-mid back rounded vowel, voiceless diacritic
+ø	close-mid front rounded vowel
+o̞	mid back rounded vowel
+oː	close-mid back rounded vowel, long suprasegmental
+œ	open-mid front rounded vowel
+ɔ	open-mid back rounded vowel
+p	voiceless bilabial plosive consonant
+p̚	voiceless bilabial plosive consonant, no-audible-release diacritic
+pː	voiceless bilabial plosive consonant, long suprasegmental
+pf	voiceless bilabial plosive consonant, voiceless labio-dental non-sibilant-fricative consonant
+pʰ	voiceless bilabial plosive consonant, aspirated diacritic
+pʲ	voiceless bilabial plosive consonant, palatalized diacritic
+pʷ	voiceless bilabial plosive consonant, labialized diacritic
+pʼ	voiceless bilabial ejective consonant
+ɸ	voiceless bilabial non-sibilant-fricative consonant
+r	voiced alveolar trill consonant
+rː	voiced alveolar trill consonant, long suprasegmental
+ʀ	voiced uvular trill consonant
+ɹ	voiced alveolar approximant consonant
+ɹ̩	voiced alveolar approximant consonant, syllabic diacritic
+ɻ	voiced retroflex approximant consonant
+ɻ̩	voiced retroflex approximant consonant, syllabic diacritic
+ɽ	voiced retroflex flap consonant
+ɾ	voiced alveolar flap consonant
+ɾ̠	voiced alveolar flap consonant, retracted diacritic
+ɾʲ	voiced alveolar flap consonant, palatalized diacritic
+s	voiceless alveolar sibilant-fricative consonant
+sː	voiceless alveolar sibilant-fricative consonant, long suprasegmental
+sʲ	voiceless alveolar sibilant-fricative consonant, palatalized diacritic
+ʂ	voiceless retroflex sibilant-fricative consonant
+ʃ	voiceless palato-alveolar sibilant-fricative consonant
+ʃʲː	voiceless palato-alveolar sibilant-fricative consonant, palatalized diacritic, long suprasegmental
+t	voiceless alveolar plosive consonant
+t̚	voiceless alveolar plosive consonant, no-audible-release diacritic
+t̪	voiceless dental plosive consonant
+t̪̚	voiceless dental plosive consonant, no-audible-release diacritic
+tː	voiceless alveolar plosive consonant, long suprasegmental
+tɕ	voiceless alveolo-palatal sibilant-affricate consonant
+t͡ɕ	voiceless alveolo-palatal sibilant-affricate consonant
+tɕʰ	voiceless alveolo-palatal sibilant-affricate consonant, aspirated diacritic
+tʰ	voiceless alveolar plosive consonant, aspirated diacritic
+t̪ʰ	voiceless dental plosive consonant, aspirated diacritic
+tʲ	voiceless alveolar plosive consonant, palatalized diacritic
+t͡ɬ	voiceless alveolar lateral-affricate consonant
+ts	voiceless alveolar sibilant-affricate consonant
+t͡s	voiceless alveolar sibilant-affricate consonant
+tsʰ	voiceless alveolar sibilant-affricate consonant, aspirated diacritic
+t͡sʼ	voiceless alveolar ejective-affricate consonant
+tʃ	voiceless palato-alveolar sibilant-affricate consonant
+t͡ʃ	voiceless palato-alveolar sibilant-affricate consonant
+t͡ʃː	voiceless palato-alveolar sibilant-affricate consonant, long suprasegmental
+t͡ʃʲ	voiceless palato-alveolar sibilant-affricate consonant, palatalized diacritic
+t͡ʃʼ	voiceless palato-alveolar ejective-affricate consonant
+tʷʼ	voiceless alveolar plosive consonant, labialized diacritic, ejective diacritic
+tʼ	voiceless alveolar ejective consonant
+u	close back rounded vowel
+uː	close back rounded vowel, long suprasegmental
+uə	close back rounded vowel, mid central unrounded vowel
+ɥ	voiced labio-palatal approximant consonant
+ɯ	close back unrounded vowel
+ɯ̟	close back unrounded vowel, advanced diacritic
+ɯ̥	close back unrounded vowel, voiceless diacritic
+ɰ	voiced velar approximant consonant
+ʊ	near-close near-back rounded vowel
+v	voiced labio-dental non-sibilant-fricative consonant
+v̞	voiced labio-dental non-sibilant-fricative consonant, lowered diacritic
+vː	voiced labio-dental non-sibilant-fricative consonant, long suprasegmental
+v̞ʲ	voiced labio-dental non-sibilant-fricative consonant, lowered diacritic, palatalized diacritic
+vʲ	voiced labio-dental non-sibilant-fricative consonant, palatalized diacritic
+vʷ	voiced labio-dental non-sibilant-fricative consonant, labialized diacritic
+ʋ	voiced labio-dental approximant consonant
+ʋʲ	voiced labio-dental approximant consonant, palatalized diacritic
+ʌ	open-mid back unrounded vowel
+w	voiced labio-velar approximant consonant
+x	voiceless velar non-sibilant-fricative consonant
+y	close front rounded vowel
+ʏ	near-close near-front rounded vowel
+z	voiced alveolar sibilant-fricative consonant
+zʲ	voiced alveolar sibilant-fricative consonant, palatalized diacritic
+ʐ	voiced retroflex sibilant-fricative consonant
+ʑ	voiced alveolo-palatal sibilant-fricative consonant
+ʒ	voiced palato-alveolar sibilant-fricative consonant
+ʒ͡ɣ	voiced palato-alveolar sibilant-fricative consonant, tie-bar-above diacritic, voiced velar non-sibilant-fricative consonant
+ʔ	voiceless glottal plosive consonant
+β	voiced bilabial non-sibilant-fricative consonant
+β̞	voiced bilabial non-sibilant-fricative consonant, lowered diacritic
+θ	voiceless dental non-sibilant-fricative consonant
+χ	voiceless uvular non-sibilant-fricative consonant
